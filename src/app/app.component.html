@@ -56,51 +56,14 @@
           style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
     </div>
 
-    <div class="divcontent divcontent2">
+    <div class="divcontent divcontent2" *ngFor="let service of services">
       <div class="flex">
-        <img [src]="service1.images" alt="logo">
-        <h2>{{service1.title}}</h2>
+        <img [src]="service.images" alt="logo">
+        <h2>{{service.title}}</h2>
       </div>
-      <p>{{service1.description}}</p>
-      <a href="#">{{service1.button}}</a>
+      <p>{{service.description}}</p>
+      <a href="#">{{service.button}}</a>
     </div>
-
-    <div class="divcontent divcontent3">
-      <div class="flex">
-        <img [src]="service2.images" alt="logo">
-        <h2>{{service2.title}}</h2>
-      </div>
-      <p>{{service2.description}}</p>
-      <a href="#">{{service2.button}}</a>
-    </div>
-
-    <div class="divcontent divcontent4">
-      <div class="flex">
-        <img [src]="service3.images" alt="logo">
-        <h2>{{service3.title}}</h2>
-      </div>
-      <p>{{service3.description}}</p>
-      <a href="#">{{service3.button}}</a>
-    </div>
-
-    <div class="divcontent divcontent5">
-      <div class="flex">
-        <img [src]="service4.images" alt="logo">
-        <h2>{{service4.title}}</h2>
-      </div>
-      <p>{{service4.description}}</p>
-      <a href="#">{{service4.button}}</a>
-    </div>
-
-    <div class="divcontent divcontent6">
-      <div class="flex">
-        <img [src]="service5.images" alt="logo">
-        <h2></h2>
-      </div>
-      <p>{{service5.description}}</p>
-      <a href="#">{{service5.button}}</a>
-    </div>
-
     <div class="divcontent divcontent7">
       <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
       <button>{{serv.title7}}</button>
@@ -121,12 +84,13 @@
 
   <div class="numberexp">
     <div class="fulldiv1">
-      <div class="div1">
-        <img [src]="numExp1.image">
-        <h1>{{numExp1.heading}}</h1>
-        <h5>{{numExp1.head2}}</h5>
+      <div class="div1" *ngFor="let number of numbers">
+        <img [src]="number.image">
+        <h1>{{number.heading}}</h1>
+        <h5>{{number.head2}}</h5>
       </div>
-      <div class="div2">
+    </div>
+    <!-- <div class="div2">
         <img [src]="numExp2.image">
         <h1>{{numExp2.heading}}</h1>
         <h5>{{numExp2.head2}}</h5>
@@ -144,7 +108,7 @@
         <h1>{{numExp4.heading}}</h1>
         <h5>{{numExp4.head2}}</h5>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -156,15 +120,7 @@
 <div class="row">
   <div class="menu">
     <ul>
-      <li class="active"><a href="">{{tecno.item1}}</a></li>
-      <li><a href=""></a>{{tecno.item2}}</li>
-      <li><a href=""></a>{{tecno.item3}}</li>
-      <li><a href=""></a>{{tecno.item4}}</li>
-      <li><a href=""></a>{{tecno.item5}}</li>
-      <li><a href=""></a>{{tecno.item6}}</li>
-      <li><a href=""></a>{{tecno.item7}}</li>
-      <li><a href=""></a>{{tecno.item8}}</li>
-      <li><a href=""></a>{{tecno.item9}}</li>
+      <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
     </ul>
   </div>
   <div class="language">
@@ -172,58 +128,17 @@
       <h1>{{tech.subHead}}</h1>
       <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
       <div class="backend">
-        <div class="ror">
-          <img [src]="ror.image" alt="ror">
-          <h3>{{ror.title}}</h3>
+        <div class="ror" *ngFor="let backend of backends">
+          <img [src]="backend.image" alt="ror">
+          <h3>{{backend.title}}</h3>
         </div>
-        <div class="python">
-          <img [src]="python.image">
-          <h3>{{python.title}}</h3>
-        </div>
-        <div class="node">
-          <img [src]="node.image">
-          <h3>{{node.title}}</h3>
-        </div>
-        <div class="php">
-          <img [src]="php.image">
-          <h3>{{php.title}}</h3>
-        </div>
-        <div class="java">
-          <img [src]="java.image">
-          <h3>{{java.title}}</h3>
-        </div>
-        <div class="go">
-          <img [src]="go.image">
-          <h3>{{go.title}}</h3>
-        </div>
-
       </div>
 
       <h2>{{tech.title2}}</h2>
       <div class="frontend">
-        <div class="react">
-          <img [src]="react.image">
-          <h3>{{react.title}}</h3>
-        </div>
-        <div class="angular">
-          <img [src]="angular.image">
-          <h3>{{angular.title}}</h3>
-        </div>
-        <div class="typescipt">
-          <img [src]="typescript.image">
-          <h3>{{typescript.title}}</h3>
-        </div>
-        <div class="vue">
-          <img [src]="vuejs.image">
-          <h3>{{vuejs.title}}</h3>
-        </div>
-        <div class="mateor">
-          <img [src]="mateor.image">
-          <h3>{{mateor.title}}</h3>
-        </div>
-        <div class="javascript">
-          <img [src]="javascript.image">
-          <h3>{{javascript.title}}</h3>
+        <div class="react" *ngFor="let frontend of frontends">
+          <img [src]="frontend.image">
+          <h3>{{frontend.title}}</h3>
         </div>
         <div class="html">
           <img src="">
@@ -241,45 +156,13 @@
 <span class="headerline"></span>
 <p class="taglinewhyp">{{chooseDes}}</p>
 <div class="empowers">
-  <div class="empowerbox">
+  <div class="empowerbox" *ngFor="let choose of chooses">
     <div class="imgnumflex">
-      <img [src]="choose1.image">
-      <h1>{{choose1.title1}}</h1>
+      <img [src]="choose.image">
+      <h1>{{choose.title1}}</h1>
     </div>
-    <h2>{{choose1.title2}}</h2>
-    <p>{{choose1.des}}</p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="choose2.image">
-      <h1>{{choose2.title1}}</h1>
-    </div>
-    <h2>{{choose2.title2}}</h2>
-    <p>{{choose2.des}}</p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="choose3.image">
-      <h1>{{choose3.title1}}</h1>
-    </div>
-    <h2>{{choose3.title2}}</h2>
-    <p>{{choose3.des}}</p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="choose4.image">
-      <h1>{{choose4.title1}}</h1>
-    </div>
-    <h2>{{choose4.title2}}</h2>
-    <p>{{choose4.des}}</p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="choose5.image">
-      <h1>{{choose5.title1}}</h1>
-    </div>
-    <h2>{{choose5.title2}}</h2>
-    <p>{{choose5.des}}</p>
+    <h2>{{choose.title2}}</h2>
+    <p>{{choose.des}}</p>
   </div>
   <div class="empowerbox lastempowerbox">
     <h1><span>{{endblog.title1}} </span> {{endblog.title2}}<span> {{endblog.title3}}</span> {{endblog.title4}}</h1>

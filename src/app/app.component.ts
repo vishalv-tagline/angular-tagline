@@ -195,40 +195,39 @@ export class AppComponent {
     title7: 'Contact Us',
   }
 
-  service1: Iservices = {
-    images: '../assets/images/mobile.png',
-    title: 'Application Management and Modernisation',
-    description: 'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
-    button: 'Learn More ->'
-  }
+  services: Iservices[] = [
+    {
+      images: '../assets/images/mobile.png',
+      title: 'Application Management and Modernisation',
+      description: 'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
+      button: 'Learn More ->'
+    },
+    {
+      images: '../assets/images/web-design-icon.webp',
+      title: 'Software Product Engineering',
+      description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing,developing, testing, and deploying the software products.',
+      button: 'Learn More ->'
+    },
+    {
+      images: '../assets/images/testing-icon.webp',
+      title: 'Agile QA, Automation, and DevOps',
+      description: 'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA,Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QAensures the quality of the software.',
+      button: 'Learn More ->'
+    },
+    {
+      images: '../assets/images/uiux-design-icon.webp',
+      title: 'Digital Strategy & Design',
+      description: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+      button: 'Learn More ->'
+    },
+    {
+      images: '../assets/images/software-development-1.png',
+      title: 'Software outsourcing company',
+      description: 'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+      button: 'Learn More ->'
+    }];
 
-  service2: Iservices = {
-    images: '../assets/images/web-design-icon.webp',
-    title: 'Software Product Engineering',
-    description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing,developing, testing, and deploying the software products.',
-    button: 'Learn More ->'
-  }
 
-  service3: Iservices = {
-    images: '../assets/images/testing-icon.webp',
-    title: 'Agile QA, Automation, and DevOps',
-    description: 'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA,Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QAensures the quality of the software.',
-    button: 'Learn More ->'
-  }
-
-  service4: Iservices = {
-    images: '../assets/images/uiux-design-icon.webp',
-    title: 'Digital Strategy & Design',
-    description: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-    button: 'Learn More ->'
-  }
-
-  service5: Iservices = {
-    images: '../assets/images/software-development-1.png',
-    title: 'Software outsourcing company',
-    description: 'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-    button: 'Learn More ->'
-  }
 
   exprience: Experience = {
     title: 'We have the experience',
@@ -236,29 +235,28 @@ export class AppComponent {
   }
   womenImg: string = '../assets/images/woman.webp';
 
-  numExp1: Numexp = {
-    image: '../assets/images/contentlogo.webp',
-    heading: '125+',
-    head2: 'Profesional'
-  }
-
-  numExp2: Numexp = {
-    image: '../assets/images/contentlogo2.webp',
-    heading: '450+',
-    head2: 'Completed Projects'
-  }
-
-  numExp3: Numexp = {
-    image: '../assets/images/contentlogo3.webp',
-    heading: '150+',
-    head2: 'Freelance Hours'
-  }
-
-  numExp4: Numexp = {
-    image: '../assets/images/contentlogo4.webp',
-    heading: '5+',
-    head2: 'Years of experience'
-  }
+  numbers: Numexp[] = [
+    {
+      image: '../assets/images/contentlogo.webp',
+      heading: '125+',
+      head2: 'Profesional'
+    },
+    {
+      image: '../assets/images/contentlogo2.webp',
+      heading: '450+',
+      head2: 'Completed Projects'
+    },
+    {
+      image: '../assets/images/contentlogo3.webp',
+      heading: '150+',
+      head2: 'Freelance Hours'
+    },
+    {
+      image: '../assets/images/contentlogo4.webp',
+      heading: '5+',
+      head2: 'Years of experience'
+    }
+  ];
 
   tech: TechHead = {
     head: 'Our Technologies',
@@ -267,105 +265,115 @@ export class AppComponent {
     title2: 'Front End'
   }
 
-  ror: Languages = {
-    image: '../assets/images/ror.png',
-    title: 'Ruby on Rails'
-  }
+  backends: Languages[] = [
+    {
+      image: '../assets/images/ror.png',
+      title: 'Ruby on Rails'
+    },
 
-  python: Languages = {
-    image: '../assets/images/python.png',
-    title: 'Pythomn'
-  }
+    {
+      image: '../assets/images/python.png',
+      title: 'Pythomn'
+    },
 
-  node: Languages = {
-    image: '../assets/images/node_js.svg',
-    title: 'Node Js'
-  }
+    {
+      image: '../assets/images/node_js.svg',
+      title: 'Node Js'
+    },
 
-  php: Languages = {
-    image: '../assets/images/php.png',
-    title: 'Php'
-  }
+    {
+      image: '../assets/images/php.png',
+      title: 'Php'
+    },
 
-  java: Languages = {
-    image: '../assets/images/android-java.png',
-    title: 'Java'
-  }
+    {
+      image: '../assets/images/android-java.png',
+      title: 'Java'
+    },
 
-  go: Languages = {
-    image: '../assets/images/go.png',
-    title: 'Go Language'
-  }
+    {
+      image: '../assets/images/go.png',
+      title: 'Go Language'
+    },
 
-  react: Languages = {
-    image: '../assets/images/react-js.png',
-    title: 'React Js'
-  }
+  ];
 
-  angular: Languages = {
-    image: '../assets/images/angular-icon.png',
-    title: 'Angular'
-  }
+  frontends: Languages[] = [
+    {
+      image: '../assets/images/react-js.png',
+      title: 'React Js'
+    },
 
-  typescript: Languages = {
-    image: '../assets/images/typescript-icon.png',
-    title: 'Typescript'
-  }
+    {
+      image: '../assets/images/angular-icon.png',
+      title: 'Angular'
+    },
 
-  vuejs: Languages = {
-    image: '../assets/images/vue-js.png',
-    title: 'Vue Js'
-  }
+    {
+      image: '../assets/images/typescript-icon.png',
+      title: 'Typescript'
+    },
 
-  mateor: Languages = {
-    image: '../assets/images/meter-js.png',
-    title: 'Mateor Js'
-  }
+    {
+      image: '../assets/images/vue-js.png',
+      title: 'Vue Js'
+    },
 
-  javascript: Languages = {
-    image: '../assets/images/javascript-icon.png',
-    title: 'Java Script'
-  }
+    {
+      image: '../assets/images/meter-js.png',
+      title: 'Mateor Js'
+    },
 
-  html: Languages = {
-    image: '../assets/images/html5.png',
-    title: 'HTML 5'
-  }
+    {
+      image: '../assets/images/javascript-icon.png',
+      title: 'Java Script'
+    },
 
-  choose1: Choose = {
-    image: '../assets/images/choose-roadmap.png',
-    title1: '01',
-    title2: 'Progressive Roadmap',
-    des: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive'
-  }
+    {
+      image: '../assets/images/html5.png',
+      title: 'HTML 5'
+    },
+  ];
 
-  choose2: Choose = {
-    image: '../assets/images/choose-project.png',
-    title1: '02',
-    title2: 'Efficient Project Management',
-    des: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently'
-  }
+  chooses: Choose[] = [
+    {
+      image: '../assets/images/choose-roadmap.png',
+      title1: '01',
+      title2: 'Progressive Roadmap',
+      des: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive'
+    },
 
-  choose3: Choose = {
-    image: '../assets/images/choose-flexible.svg',
-    title1: '03',
-    title2: 'Flexible Engagement Model',
-    des: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.'
-  }
+    {
+      image: '../assets/images/choose-project.png',
+      title1: '02',
+      title2: 'Efficient Project Management',
+      des: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently'
+    },
 
-  choose4: Choose = {
-    image: '../assets/images/choose-cost.png',
-    title1: '04',
-    title2: 'Cost-Effective',
-    des: 'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring'
-  }
+    {
+      image: '../assets/images/choose-flexible.svg',
+      title1: '03',
+      title2: 'Flexible Engagement Model',
+      des: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.'
+    },
 
-  choose5: Choose = {
-    image: '../assets/images/choose-delivery.png',
-    title1: '05',
-    title2: 'Consistent Delivery',
-    des: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.'
-  }
+    {
+      image: '../assets/images/choose-cost.png',
+      title1: '04',
+      title2: 'Cost-Effective',
+      des: 'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring'
+    },
+
+    {
+      image: '../assets/images/choose-delivery.png',
+      title1: '05',
+      title2: 'Consistent Delivery',
+      des: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.'
+    }
+  ];
+
+
+
 
   chooseHead: string = "Why Choose Tagline Infotech ?";
   chooseDes: string = "We have a team of developers who use their expertise to provide complete web development,mobile app development,testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers that you can hire by mentioning the requirements for your project. Save time and money by hiring our developers for your startup or large-scale company. Our team of developers has the experience to understand the business ideasof the clients to provide solutions that focus on the core values of the business. Here you will find some benefits of hiring developers from us."
@@ -469,17 +477,17 @@ export class AppComponent {
     head9: 'Tagline Infotech LLP'
   }
 
-  tecno: Tech = {
-    item1: 'Web',
-    item2: 'Mobile',
-    item3: 'Desktop',
-    item4: 'Plateform',
-    item5: 'Database / Data Storage',
-    item6: 'Big Data',
-    item7: 'Machine Learning',
-    item8: 'DevOps',
-    item9: 'Clouds'
-  }
+  tecnologies: string[] = [
+    'Web',
+    'Mobile',
+    'Desktop',
+    'Plateform',
+    'Database / Data Storage',
+    'Big Data',
+    'Machine Learning',
+    'DevOps',
+    'Clouds'
+  ];
 
   help: Footericon = {
     head: 'Help & Advice',
