@@ -95,25 +95,6 @@ interface Inqury {
   number: string
 }
 
-interface Footericon {
-  head: string,
-  item1: string,
-  item2: string,
-  item3: string,
-  item4: string,
-  item5: string,
-  item6?: string
-}
-
-interface Award {
-  title1: string,
-  title2: string,
-  image1: string,
-  image2: string,
-  image3: string,
-  image4: string,
-  image5: string
-}
 
 interface Footermain {
   headMian: string,
@@ -133,18 +114,6 @@ interface TechHead {
   subHead: string,
   title1: string,
   title2: string
-}
-
-interface Tech {
-  item1: string,
-  item2: string,
-  item3: string,
-  item4: string,
-  item5: string,
-  item6: string,
-  item7: string,
-  item8: string
-  item9: string
 }
 
 interface Reviews {
@@ -183,7 +152,6 @@ export class AppComponent {
   }
 
   btntype: string = 'Button';
-
 
   serv: ServicesAll = {
     title1: 'Our Services',
@@ -226,8 +194,6 @@ export class AppComponent {
       description: 'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
       button: 'Learn More ->'
     }];
-
-
 
   exprience: Experience = {
     title: 'We have the experience',
@@ -342,28 +308,24 @@ export class AppComponent {
       title2: 'Progressive Roadmap',
       des: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive'
     },
-
     {
       image: '../assets/images/choose-project.png',
       title1: '02',
       title2: 'Efficient Project Management',
       des: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently'
     },
-
     {
       image: '../assets/images/choose-flexible.svg',
       title1: '03',
       title2: 'Flexible Engagement Model',
       des: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.'
     },
-
     {
       image: '../assets/images/choose-cost.png',
       title1: '04',
       title2: 'Cost-Effective',
       des: 'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring'
     },
-
     {
       image: '../assets/images/choose-delivery.png',
       title1: '05',
@@ -371,9 +333,6 @@ export class AppComponent {
       des: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.'
     }
   ];
-
-
-
 
   chooseHead: string = "Why Choose Tagline Infotech ?";
   chooseDes: string = "We have a team of developers who use their expertise to provide complete web development,mobile app development,testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers that you can hire by mentioning the requirements for your project. Save time and money by hiring our developers for your startup or large-scale company. Our team of developers has the experience to understand the business ideasof the clients to provide solutions that focus on the core values of the business. Here you will find some benefits of hiring developers from us."
@@ -384,32 +343,34 @@ export class AppComponent {
     des2: 'We are a well-known IT services company on Clutch. Check out what our customers have to say about our services. Read their ratings, feedback,and stories about partnering with us before making your own decision.'
   }
 
-  blog1: Blog = {
-    image: '../assets/images/Python-vs-Java.png',
-    button: 'Python',
-    date: '15/12/22',
-    head1: 'Python vs Java Comparison Of',
-    des: 'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
-    endbtn: 'Read More ->'
-  }
+  blogs: Blog[] = [
+    {
+      image: '../assets/images/Python-vs-Java.png',
+      button: 'Python',
+      date: '15/12/22',
+      head1: 'Python vs Java Comparison Of',
+      des: 'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
+      endbtn: 'Read More ->'
+    },
 
-  blog2: Blog = {
-    image: '../assets/images/Node.js-Application.png',
-    button: 'Node Js',
-    date: '9/12/22',
-    head1: 'Best Practices for Node.js Application Development:...',
-    des: 'Quick Summary Want to know about node js architecture and node js architecture best',
-    endbtn: 'Read More ->'
-  }
+    {
+      image: '../assets/images/Node.js-Application.png',
+      button: 'Node Js',
+      date: '9/12/22',
+      head1: 'Best Practices for Node.js Application Development:...',
+      des: 'Quick Summary Want to know about node js architecture and node js architecture best',
+      endbtn: 'Read More ->'
+    },
 
-  blog3: Blog = {
-    image: '../assets/images/Kotlin-vs-Java.png',
-    button: 'RoR',
-    date: '9/12/22',
-    head1: 'JavaScript vs Ruby On Rails: What...',
-    des: 'JavaScript vs Ruby On Rails: What...',
-    endbtn: 'Read More ->'
-  }
+    {
+      image: '../assets/images/Kotlin-vs-Java.png',
+      button: 'RoR',
+      date: '9/12/22',
+      head1: 'JavaScript vs Ruby On Rails: What...',
+      des: 'JavaScript vs Ruby On Rails: What...',
+      endbtn: 'Read More ->'
+    }
+  ];
 
   endblog: ChooseEnd = {
     title1: 'Empower',
@@ -421,24 +382,27 @@ export class AppComponent {
 
   address: string = 'Our Global Presence';
 
-  add1: Address = {
-    head: 'India (HQ)',
-    add: 'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat,Gujarat 394101',
-    number: '+91 9913 808 285'
-  }
+  addresses: Address[] = [
+    {
+      head: 'India (HQ)',
+      add: 'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat,Gujarat 394101',
+      number: '+91 9913 808 285'
+    },
 
-  add2: Address = {
-    head: 'U.S.A',
-    add: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
-    number: '+1 (404) 483-3388'
-  }
+    {
+      head: 'U.S.A',
+      add: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
+      number: '+1 (404) 483-3388'
+    },
 
-  add3: Address = {
-    head: 'United Kingdom',
-    add: '65 Byron road North wembley Middlesex, london HA0 3PB',
-    number: '+44 78240 75400',
-    email: 'solutions@taglineinfotech.com'
-  }
+    {
+      head: 'United Kingdom',
+      add: '65 Byron road North wembley Middlesex, london HA0 3PB',
+      number: '+44 78240 75400',
+    }
+  ];
+
+  add3: string = 'solutions@taglineinfotech.com';
 
   formHead: string = 'Get Your Free Quote Today';
 
@@ -454,15 +418,15 @@ export class AppComponent {
     number: 'Tagline infotech'
   }
 
-  award: Award = {
-    title1: 'Awards & ',
-    title2: 'Recognitions',
-    image1: '../assets/images/award-2.webp',
-    image2: '../assets/images/award-3.webp',
-    image3: '../assets/images/award-4.webp',
-    image4: '../assets/images/award-5.webp',
-    image5: '../assets/images/award-6.webp'
-  }
+  awardtitle1: string = 'Awards & '
+  awardtitle2: string = 'Recognitions'
+  awards: string[] = [
+    '../assets/images/award-2.webp',
+    '../assets/images/award-3.webp',
+    '../assets/images/award-4.webp',
+    '../assets/images/award-5.webp',
+    '../assets/images/award-6.webp'
+  ]
 
   footerhead: Footermain = {
     headMian: 'Get latest from Tagline Infotech',
@@ -489,74 +453,75 @@ export class AppComponent {
     'Clouds'
   ];
 
-  help: Footericon = {
-    head: 'Help & Advice',
-    item1: 'Career',
-    item2: 'About Us',
-    item3: 'Contact Us',
-    item4: 'Blog',
-    item5: 'Privacy pilicy',
-    item6: 'Sitemap'
-  }
+  helphead: string = 'Help & Advice';
+  helps: string[] = [
+    'Career',
+    'About Us',
+    'Contact Us',
+    'Blog',
+    'Privacy pilicy',
+    'Sitemap'
+  ]
 
-  service: Footericon = {
-    head: 'Services',
-    item1: 'Mobile',
-    item2: 'web Development',
-    item3: 'Web Design',
-    item4: 'UI / UX Design',
-    item5: 'Digital Marketing',
-  }
+  servicehead: string = 'Services'
+  servicesfooters: string[] = [
+    'Mobile',
+    'web Development',
+    'Web Design',
+    'UI / UX Design',
+    'Digital Marketing',
+  ]
 
-  hire: Footericon = {
-    head: 'Hire Developer',
-    item1: 'Hire Python Developer',
-    item2: 'Hire Angular Developer',
-    item3: 'Hire ROR Developer',
-    item4: 'Hire Flutter Developer',
-    item5: 'Hire React Js Developer',
-    item6: 'Hire React Native Developer'
-  }
+  hirehead: string = 'Hire Developer';
+  hires: string[] = [
+    'Hire Python Developer',
+    'Hire Angular Developer',
+    'Hire ROR Developer',
+    'Hire Flutter Developer',
+    'Hire React Js Developer',
+    'Hire React Native Developer'
+  ]
 
-  revie1: Reviews = {
-    head: '5.0',
-    des: '"Everything always turns out perfectly done."',
-    name: 'IT & Computer Scientict and self employe',
-    verify: 'Verified Review'
-  }
+  reviews: Reviews[] = [
+    {
+      head: '5.0',
+      des: '"Everything always turns out perfectly done."',
+      name: 'IT & Computer Scientict and self employe',
+      verify: 'Verified Review'
+    },
 
-  revie2: Reviews = {
-    head: '5.0',
-    des: '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
-    name: 'Founder, Cimpro.io',
-    verify: 'Verified Review'
-  }
+    {
+      head: '5.0',
+      des: '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
+      name: 'Founder, Cimpro.io',
+      verify: 'Verified Review'
+    },
 
-  revie3: Reviews = {
-    head: '5.0',
-    des: '"…they’re able to tackle pretty much everything you throw at them."',
-    name: 'CEO, Promoprep',
-    verify: 'Verified Review'
-  }
+    {
+      head: '5.0',
+      des: '"…they’re able to tackle pretty much everything you throw at them."',
+      name: 'CEO, Promoprep',
+      verify: 'Verified Review'
+    },
 
-  revie4: Reviews = {
-    head: '5.0',
-    des: '"The team takes up new challenges and finishes the project on time."',
-    name: 'Software Architect, Specialty Finance Company',
-    verify: 'Verified Review'
-  }
+    {
+      head: '5.0',
+      des: '"The team takes up new challenges and finishes the project on time."',
+      name: 'Software Architect, Specialty Finance Company',
+      verify: 'Verified Review'
+    },
 
-  revie5: Reviews = {
-    head: '5.0',
-    des: '"We are getting close to launch now and its been a tremendous help to have their developers on my team."',
-    name: 'Owner, e-Commerce Support Company',
-    verify: 'Verified Review'
-  }
-
-  revie6: Reviews = {
-    head: '5.0',
-    des: 'When things go wrong, they were good at adepting and problem solving on the fly',
-    name: 'CEO,SupplimentSnoop',
-    verify: 'Verified Review'
-  }
+    {
+      head: '5.0',
+      des: '"We are getting close to launch now and its been a tremendous help to have their developers on my team."',
+      name: 'Owner, e-Commerce Support Company',
+      verify: 'Verified Review'
+    },
+    {
+      head: '5.0',
+      des: 'When things go wrong, they were good at adepting and problem solving on the fly',
+      name: 'CEO,SupplimentSnoop',
+      verify: 'Verified Review'
+    },
+  ];
 }

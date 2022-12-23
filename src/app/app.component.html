@@ -151,7 +151,6 @@
 
 <!-- ____________________________________________________________________ -->
 
-
 <h1 class="taglinewhyhead">{{chooseHead}}</h1>
 <span class="headerline"></span>
 <p class="taglinewhyp">{{chooseDes}}</p>
@@ -180,9 +179,9 @@
     <p>{{reviewhead.des2}}</p>
   </div>
   <div class="reviewsboxes">
-    <div class="revbox">
+    <div class="revbox" *ngFor="let review of reviews">
       <div class="rating">
-        <h3>{{revie1.head}}</h3>
+        <h3>{{review.head}}</h3>
         <div class="icon">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -191,124 +190,14 @@
           <i class="bi bi-star-fill"></i>
         </div>
       </div>
-
-      <p>{{revie1.des}}</p>
-      <small>{{revie1.name}}</small>
-
+      <p>{{review.des}}</p>
+      <small>{{review.name}}</small>
       <div class="verified">
         <i class="bi bi-patch-check-fill"></i>&nbsp;
-        <p>{{revie1.verify}}</p>
+        <p>{{review.verify}}</p>
       </div>
     </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{revie2.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{revie2.des}}</p>
-      <small>{{revie2.name}}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{revie2.verify}}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{revie3.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{revie3.des}}</p>
-      <small>{{revie3.name}}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{revie3.verify}}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{revie6.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{revie6.des}}</p>
-      <small>{{revie6.name}}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{revie6.verify}}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{revie4.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{revie4.des}}</p>
-      <small>{{revie4.name}}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{revie4.verify}}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{revie5.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{revie5.des}}</p>
-      <small>{{revie5.name}}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{revie5.verify}}</p>
-      </div>
-    </div>
-
-
   </div>
-
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -316,14 +205,10 @@
 
 <div class="awards">
   <!-- <div class="awardhead"> -->
-  <h1>{{award.title1}}<br> {{award.title2}}</h1>
+  <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
   <!-- </div> -->
-  <div class="awardimage">
-    <img [src]="award.image1" height="160" width="160">
-    <img [src]="award.image2" height="160" width="160">
-    <img [src]="award.image3" height="160" width="160">
-    <img [src]="award.image4" height="160" width="160">
-    <img [src]="award.image5" height="160" width="160">
+  <div class="awardimage" *ngFor="let award of awards">
+    <img [src]="award" height="160" width="160">
   </div>
 
 </div>
@@ -334,35 +219,15 @@
   <h1>Our Blogs</h1>
   <span class="headerline"></span>
   <div class="bloggers">
-    <div class="blog">
-      <img [src]="blog1.image">
+    <div class="blog" *ngFor="let blog of blogs">
+      <img [src]="blog.image">
       <div style="display: flex;justify-content: space-between;">
-        <button>{{blog1.button}}</button>
-        <p>{{blog1.date}}</p>
+        <button>{{blog.button}}</button>
+        <p>{{blog.date}}</p>
       </div>
-      <h3>{{blog1.head1}}</h3>
-      <p>{{blog1.des}}</p>
-      <a href="#">{{blog1.endbtn}}</a>
-    </div>
-    <div class="blog">
-      <img [src]="blog2.image">
-      <div style="display: flex;justify-content: space-between;">
-        <button>{{blog2.button}}</button>
-        <p>{{blog2.date}}</p>
-      </div>
-      <h3>{{blog2.head1}}</h3>
-      <p>{{blog2.des}}</p>
-      <a href="#">{{blog2.endbtn}}</a>
-    </div>
-    <div class="blog">
-      <img [src]="blog3.image">
-      <div style="display: flex;justify-content: space-between;">
-        <button>{{blog3.button}}</button>
-        <p>{{blog3.date}}</p>
-      </div>
-      <h3>{{blog3.head1}}</h3>
-      <p>{{blog3.des}}</p>
-      <a href="#">{{blog3.endbtn}}</a>
+      <h3>{{blog.head1}}</h3>
+      <p>{{blog.des}}</p>
+      <a href="#">{{blog.endbtn}}</a>
     </div>
   </div>
 </div>
@@ -375,30 +240,14 @@
 
       <h4>{{address}}</h4>
 
-      <div class="place">
-        <h6>{{add1.head}}</h6>
-        <p class="add-city">{{add1.add}}</p>
+      <div class="place" *ngFor="let address of addresses">
+        <h6>{{address.head}}</h6>
+        <p class="add-city">{{address.add}}</p>
         <a href="tel:+91 99138 08285" class="contact mobile-no"><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
-          {{add1.number}} </a>
+          {{address.number}} </a>
       </div>
-
       <div class="place">
-        <h6>{{add2.head}}</h6>
-        <p class="add-city">{{add2.add}}</p>
-        <a href="tel: +1 (404) 483-3388" class="contact mobile-no"><i
-            class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{add2.number}}</a>
-      </div>
-
-      <div class="place">
-        <h6>{{add3.head}}</h6>
-        <p class="add-city">{{add3.add}}</p>
-        <a href="tel:+44 78240 75400" class="contact mobile-no"><i
-            class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{add3.number}}</a>
-      </div>
-
-      <div class="place">
-        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
-            class="bi bi-envelope-fill"></i>{{add3.email}}</a>
+        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i>{{add3}}</a>
       </div>
 
     </div>
@@ -445,35 +294,21 @@
       </div>
     </div>
     <div class="help">
-      <h3>{{help.head}}</h3>
+      <h3>{{helphead}}</h3>
       <ul>
-        <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{help.item1}}</a></li>
-        <li><a href=""><i class="bi bi-file-person-fill"></i>&nbsp;{{help.item2}}</a></li>
-        <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp;{{help.item3}}</a></li>
-        <li><a href=""><i class="bi bi-camera-video"></i>&nbsp;{{help.item4}}</a></li>
-        <li><a href=""><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{help.item5}}</a></li>
-        <li><a href=""><i class="bi bi-diagram-3-fill"></i>&nbsp;{{help.item6}}</a></li>
+        <li *ngFor="let help of helps"><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{help}}</a></li>
       </ul>
     </div>
     <div class="service">
-      <h3>{{service.head}}</h3>
+      <h3>{{servicehead}}</h3>
       <ul>
-        <li><a href="">{{service.item1}}</a></li>
-        <li><a href="">{{service.item2}}</a></li>
-        <li><a href="">{{service.item3}}</a></li>
-        <li><a href="">{{service.item4}}</a></li>
-        <li><a href="">{{service.item5}}</a></li>
+        <li *ngFor="let servicefooter of servicesfooters"><a href="">{{servicefooter}}</a></li>
       </ul>
     </div>
     <div class="hire">
-      <h3>{{hire.head}}</h3>
+      <h3>{{hirehead}}</h3>
       <ul>
-        <li><a href="">{{hire.item1}}</a></li>
-        <li><a href="">{{hire.item2}}</a></li>
-        <li><a href="">{{hire.item3}}</a></li>
-        <li><a href="">{{hire.item4}}</a></li>
-        <li><a href="">{{hire.item5}}</a></li>
-        <li><a href="">{{hire.item6}}</a></li>
+        <li *ngFor="let hire of hires"><a href="">{{hire}}</a></li>
       </ul>
     </div>
 
