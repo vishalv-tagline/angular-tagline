@@ -217,58 +217,60 @@
     display: flex;
     width: 100%;
     min-height: 68vh;
+    background: linear-gradient(to left, #e3ccc0, #ffffffc8);   
+    color: #d66f37;
 }
 
-.experience .contentexp {
-    width: 50%;
-    background: linear-gradient(119.18deg, rgba(217, 97, 34, .8) 0%, rgba(217, 97, 34, .2) 100%);
-    text-align: center;
-    padding-bottom: 60px;
-}
+// .experience .contentexp {
+//     width: 50%;
+//     background: linear-gradient(119.18deg, rgba(217, 97, 34, .8) 0%, rgba(217, 97, 34, .2) 100%);
+//     text-align: center;
+//     padding-bottom: 60px;
+// }
 
-.experience .contentexp h2 {
-    font-family: poppins, sans-serif;
-    font-size: 35px;
-    color: #fff;
-    font-weight: bold;
-    margin: 50px 0 25px 150px;
-    text-align: left;
-}
+// .experience .contentexp h2 {
+//     font-family: poppins, sans-serif;
+//     font-size: 35px;
+//     color: #fff;
+//     font-weight: bold;
+//     margin: 50px 0 25px 150px;
+//     text-align: left;
+// }
 
-.experience .contentexp p {
-    margin: 50px 150px;
-    font-family: poppins, sans-serif;
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-    line-height: 35px;
-}
+// .experience .contentexp p {
+//     margin: 50px 150px;
+//     font-family: poppins, sans-serif;
+//     font-size: 20px;
+//     color: #fff;
+//     text-align: left;
+//     line-height: 35px;
+// }
 
-.experience .contentexp button {
-    border: none;
-    height: 60px;
-    min-width: 20%;
-    font-size: 20px;
-    background: #D96122;
-    line-height: 30px;
-    font-weight: 700;
-    padding: 13px 35px;
-    color: #fff;
-    border-radius: 10px;
-    margin: 25px 20px;
-    cursor: pointer;
-    box-shadow: 0 5px 35px rgb(0 0 0 / 20%);
-    justify-content: start;
-    float: left;
-    margin: 0 150px;
-}
+// .experience .contentexp button {
+//     border: none;
+//     height: 60px;
+//     min-width: 20%;
+//     font-size: 20px;
+//     background: #D96122;
+//     line-height: 30px;
+//     font-weight: 700;
+//     padding: 13px 35px;
+//     color: #fff;
+//     border-radius: 10px;
+//     margin: 25px 20px;
+//     cursor: pointer;
+//     box-shadow: 0 5px 35px rgb(0 0 0 / 20%);
+//     justify-content: start;
+//     float: left;
+//     margin: 0 150px;
+// }
 
-.experience .contentexp button:hover {
-    background-color: #fff;
-    color: #D96122;
-    transition: all ease-in .3s;
-    border: 2px solid #D96122;
-}
+// .experience .contentexp button:hover {
+//     background-color: #fff;
+//     color: #D96122;
+//     transition: all ease-in .3s;
+//     border: 2px solid #D96122;
+// }
 
 .experience span{
     z-index: 10;
@@ -276,70 +278,71 @@
     margin-left:43%;
     margin-top: 78px;
 }
-.experience .numberexp {
-    background: linear-gradient(to left, #eb8f5e, #ffffffc8);
-    width: 50%;
-    color: #d66f37;
-    font-family: poppins, sans-serif;
-}
 
-.experience .numberexp .fulldiv1,
-.fulldiv2 {
-    display: flex;
-    margin: 70px 0px 0px 150px;
-}
+// .experience .numberexp {
+//     background: linear-gradient(to left, #eb8f5e, #ffffffc8);
+//     width: 50%;
+//     color: #d66f37;
+//     font-family: poppins, sans-serif;
+// }
 
-.experience .numberexp .fulldiv1 .div1 h1 {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 60px;
-    color: #d96122;
-    padding-right: 60px;
-}
+// .experience .numberexp .fulldiv1,
+// .fulldiv2 {
+//     display: flex;
+//     margin: 70px 0px 0px 150px;
+// }
 
-.experience .numberexp .fulldiv1 .div1 h5 {
-    font-weight: 500;
-    font-size: 18px;
-    padding-right: 60px;
-}
+// .experience .numberexp .fulldiv1 .div1 h1 {
+//     font-weight: 600;
+//     font-size: 54px;
+//     line-height: 60px;
+//     color: #d96122;
+//     padding-right: 60px;
+// }
 
-.experience .numberexp .fulldiv1 .div2 h1 {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 60px;
-    color: #d96122;
-}
+// .experience .numberexp .fulldiv1 .div1 h5 {
+//     font-weight: 500;
+//     font-size: 18px;
+//     padding-right: 60px;
+// }
 
-.experience .numberexp .fulldiv1 .div2 h5 {
-    font-weight: 500;
-    font-size: 18px;
-}
+// .experience .numberexp .fulldiv1 .div2 h1 {
+//     font-weight: 600;
+//     font-size: 54px;
+//     line-height: 60px;
+//     color: #d96122;
+// }
 
-.experience .numberexp .fulldiv2 .div3 h1 {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 60px;
-    color: #d96122;
-    padding-right: 60px;
-}
+// .experience .numberexp .fulldiv1 .div2 h5 {
+//     font-weight: 500;
+//     font-size: 18px;
+// }
 
-.experience .numberexp .fulldiv2 .div3 h5 {
-    font-weight: 500;
-    font-size: 18px;
-    padding-right: 60px;
-}
+// .experience .numberexp .fulldiv2 .div3 h1 {
+//     font-weight: 600;
+//     font-size: 54px;
+//     line-height: 60px;
+//     color: #d96122;
+//     padding-right: 60px;
+// }
 
-.experience .numberexp .fulldiv2 .div4 h1 {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 60px;
-    color: #d96122;
-}
+// .experience .numberexp .fulldiv2 .div3 h5 {
+//     font-weight: 500;
+//     font-size: 18px;
+//     padding-right: 60px;
+// }
 
-.experience .numberexp .fulldiv2 .div4 h5 {
-    font-weight: 500;
-    font-size: 18px;
-}
+// .experience .numberexp .fulldiv2 .div4 h1 {
+//     font-weight: 600;
+//     font-size: 54px;
+//     line-height: 60px;
+//     color: #d96122;
+// }
+
+// .experience .numberexp .fulldiv2 .div4 h5 {
+//     font-weight: 500;
+//     font-size: 18px;
+// }
 
 /* ____________________________________________________________________ */
 

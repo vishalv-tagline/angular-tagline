@@ -38,24 +38,26 @@
 
   <!-- ___________________________________________________________ -->
   <div class="experience">
-    <div class="contentexp">
+    <!-- <div class="contentexp">
       <h2>{{exprience.title}}</h2>
       <p>{{exprience.des}}</p>
       <button>Contact Us</button>
-    </div>
-    <span>
-      <img [src]="womenImg" height="490">
-    </span>
+    </div> -->
+    <app-exprienceleft [exprienceTitle]="chooseHead" [exprienceDes]="chooseDes"></app-exprienceleft>
 
-    <div class="numberexp">
+    <span>
+      <img [src]="womenImg" height="550">
+    </span>
+    <!--<div class="numberexp">
       <div class="fulldiv1">
         <div class="div1" *ngFor="let number of numbers">
           <img [src]="number.image">
           <h1>{{number.heading}}</h1>
           <h5>{{number.head2}}</h5>
         </div>
-      </div>
-      <!-- <div class="div2">
+      </div> -->
+    <app-exprienceright [numbersDatas]="numbers"></app-exprienceright>
+    <!-- <div class="div2">
         <img [src]="numExp2.image">
         <h1>{{numExp2.heading}}</h1>
         <h5>{{numExp2.head2}}</h5>
@@ -73,224 +75,223 @@
         <h1>{{numExp4.heading}}</h1>
         <h5>{{numExp4.head2}}</h5>
       </div>
-    </div> -->
+    </div>-->
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{tech.head}}</h1>
+<span class="headerline"></span>
+<div class="row">
+  <div class="menu">
+    <ul>
+      <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
+    </ul>
+  </div>
+  <div class="language">
+    <div class="web">
+      <h1>{{tech.subHead}}</h1>
+      <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
+      <div class="backend">
+        <div class="ror" *ngFor="let backend of backends">
+          <img [src]="backend.image" alt="ror">
+          <h3>{{backend.title}}</h3>
+        </div>
+      </div>
+
+      <h2>{{tech.title2}}</h2>
+      <div class="frontend">
+        <div class="react" *ngFor="let frontend of frontends">
+          <img [src]="frontend.image">
+          <h3>{{frontend.title}}</h3>
+        </div>
+        <div class="html">
+          <img src="">
+          <h3></h3>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <!-- ____________________________________________________________________ -->
+<!-- ____________________________________________________________________ -->
 
-  <h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{tech.head}}</h1>
+<h1 class="taglinewhyhead">{{chooseHead}}</h1>
+<span class="headerline"></span>
+<p class="taglinewhyp">{{chooseDes}}</p>
+<div class="empowers">
+  <div class="empowerbox" *ngFor="let choose of chooses">
+    <div class="imgnumflex">
+      <img [src]="choose.image">
+      <h1>{{choose.title1}}</h1>
+    </div>
+    <h2>{{choose.title2}}</h2>
+    <p>{{choose.des}}</p>
+  </div>
+  <div class="empowerbox lastempowerbox">
+    <h1><span>{{endblog.title1}} </span> {{endblog.title2}}<span> {{endblog.title3}}</span> {{endblog.title4}}</h1>
+    <button>{{endblog.btn}}</button>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="reviews">
+  <div class="reviewword">
+    <h1>{{reviewhead.mainHead}}</h1>
+    <span class="headerline"></span>
+    <p>{{reviewhead.des1}}</p>
+    <p>{{reviewhead.des2}}</p>
+  </div>
+  <div class="reviewsboxes">
+    <div class="revbox" *ngFor="let review of reviews">
+      <div class="rating">
+        <h3>{{review.head}}</h3>
+        <div class="icon">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+      </div>
+      <p>{{review.des}}</p>
+      <small>{{review.name}}</small>
+      <div class="verified">
+        <i class="bi bi-patch-check-fill"></i>&nbsp;
+        <p>{{review.verify}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+
+<div class="awards">
+  <!-- <div class="awardhead"> -->
+  <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
+  <!-- </div> -->
+  <div class="awardimage" *ngFor="let award of awards">
+    <img [src]="award" height="160" width="160">
+  </div>
+
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="blogs">
+  <h1>Our Blogs</h1>
   <span class="headerline"></span>
-  <div class="row">
-    <div class="menu">
+  <div class="bloggers">
+    <div class="blog" *ngFor="let blog of blogs">
+      <img [src]="blog.image">
+      <div style="display: flex;justify-content: space-between;">
+        <button>{{blog.button}}</button>
+        <p>{{blog.date}}</p>
+      </div>
+      <h3>{{blog.head1}}</h3>
+      <p>{{blog.des}}</p>
+      <a href="#">{{blog.endbtn}}</a>
+    </div>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="contactus">
+  <div class="formdetail">
+    <div class="address">
+
+      <h4>{{address}}</h4>
+
+      <div class="place" *ngFor="let address of addresses">
+        <h6>{{address.head}}</h6>
+        <p class="add-city">{{address.add}}</p>
+        <a href="tel:+91 99138 08285" class="contact mobile-no"><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
+          {{address.number}} </a>
+      </div>
+      <div class="place">
+        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i>{{add3}}</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="forms">
+    <h1>{{formHead}}</h1>
+    <input type="text" placeholder="Full Name"><br>
+    <input type="text" placeholder="Phone"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Message" rows="3"></textarea><br>
+    <button>Send Message</button>
+  </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="footer">
+  <div class="firstfooter">
+    <div class="cont1">
+      <h3>{{footerhead.headMian}}</h3>
+      <p>{{footerhead.head1}} <span style="color:#d66f37">{{footerhead.head2}}</span> {{footerhead.head3}}<span
+          style="color:#d66f37"> {{footerhead.head4}}</span></p>
+    </div>
+    <div class="cont2">
+      <input type="text" placeholder="Email"><span><button>{{footerhead.head5}}</button></span>
+      <p>{{footerhead.head6}}</p>
+    </div>
+  </div>
+  <div class="division">
+    <div>
+      <div class="hr">
+        <h3>{{footer1.head}}</h3>
+        <ul>
+          <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{footer1.mail}}</a></li>
+          <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{footer1.number}}</a></li>
+        </ul>
+      </div>
+      <div class="sales">
+        <h3>{{footer2.head}}</h3>
+        <ul>
+          <li><a href="">{{footer2.mail}}</a></li>
+          <li><a href="">{{footer2.number}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="help">
+      <h3>{{helphead}}</h3>
       <ul>
-        <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
+        <li *ngFor="let help of helps"><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{help}}</a></li>
       </ul>
     </div>
-    <div class="language">
-      <div class="web">
-        <h1>{{tech.subHead}}</h1>
-        <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
-        <div class="backend">
-          <div class="ror" *ngFor="let backend of backends">
-            <img [src]="backend.image" alt="ror">
-            <h3>{{backend.title}}</h3>
-          </div>
-        </div>
-
-        <h2>{{tech.title2}}</h2>
-        <div class="frontend">
-          <div class="react" *ngFor="let frontend of frontends">
-            <img [src]="frontend.image">
-            <h3>{{frontend.title}}</h3>
-          </div>
-          <div class="html">
-            <img src="">
-            <h3></h3>
-          </div>
-        </div>
-      </div>
+    <div class="service">
+      <h3>{{servicehead}}</h3>
+      <ul>
+        <li *ngFor="let servicefooter of servicesfooters"><a href="">{{servicefooter}}</a></li>
+      </ul>
     </div>
-  </div>
-
-  <!-- ____________________________________________________________________ -->
-
-  <h1 class="taglinewhyhead">{{chooseHead}}</h1>
-  <span class="headerline"></span>
-  <p class="taglinewhyp">{{chooseDes}}</p>
-  <div class="empowers">
-    <div class="empowerbox" *ngFor="let choose of chooses">
-      <div class="imgnumflex">
-        <img [src]="choose.image">
-        <h1>{{choose.title1}}</h1>
-      </div>
-      <h2>{{choose.title2}}</h2>
-      <p>{{choose.des}}</p>
-    </div>
-    <div class="empowerbox lastempowerbox">
-      <h1><span>{{endblog.title1}} </span> {{endblog.title2}}<span> {{endblog.title3}}</span> {{endblog.title4}}</h1>
-      <button>{{endblog.btn}}</button>
-    </div>
-  </div>
-
-  <!-- ____________________________________________________________________ -->
-
-  <div class="reviews">
-    <div class="reviewword">
-      <h1>{{reviewhead.mainHead}}</h1>
-      <span class="headerline"></span>
-      <p>{{reviewhead.des1}}</p>
-      <p>{{reviewhead.des2}}</p>
-    </div>
-    <div class="reviewsboxes">
-      <div class="revbox" *ngFor="let review of reviews">
-        <div class="rating">
-          <h3>{{review.head}}</h3>
-          <div class="icon">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </div>
-        </div>
-        <p>{{review.des}}</p>
-        <small>{{review.name}}</small>
-        <div class="verified">
-          <i class="bi bi-patch-check-fill"></i>&nbsp;
-          <p>{{review.verify}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ____________________________________________________________________ -->
-
-
-  <div class="awards">
-    <!-- <div class="awardhead"> -->
-    <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
-    <!-- </div> -->
-    <div class="awardimage" *ngFor="let award of awards">
-      <img [src]="award" height="160" width="160">
+    <div class="hire">
+      <h3>{{hirehead}}</h3>
+      <ul>
+        <li *ngFor="let hire of hires"><a href="">{{hire}}</a></li>
+      </ul>
     </div>
 
   </div>
 
-  <!-- ____________________________________________________________________ -->
+  <div class="lastfooterdiv">
+    <img src="../assets/images/tagline-stamp.png">
+    <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">Follow Us <i class="bi bi-facebook"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-globe"></i>
 
-  <div class="blogs">
-    <h1>Our Blogs</h1>
-    <span class="headerline"></span>
-    <div class="bloggers">
-      <div class="blog" *ngFor="let blog of blogs">
-        <img [src]="blog.image">
-        <div style="display: flex;justify-content: space-between;">
-          <button>{{blog.button}}</button>
-          <p>{{blog.date}}</p>
-        </div>
-        <h3>{{blog.head1}}</h3>
-        <p>{{blog.des}}</p>
-        <a href="#">{{blog.endbtn}}</a>
-      </div>
-    </div>
+      </a></div>
+    <p>©<span style="color:#d66f37"> {{footerhead.head7}}</span> {{footerhead.head8}}<a href=""
+        style="text-decoration: none;color:#d66f37">{{footerhead.head9}}</a></p>
   </div>
+</div>
 
-  <!-- ____________________________________________________________________ -->
-
-  <div class="contactus">
-    <div class="formdetail">
-      <div class="address">
-
-        <h4>{{address}}</h4>
-
-        <div class="place" *ngFor="let address of addresses">
-          <h6>{{address.head}}</h6>
-          <p class="add-city">{{address.add}}</p>
-          <a href="tel:+91 99138 08285" class="contact mobile-no"><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
-            {{address.number}} </a>
-        </div>
-        <div class="place">
-          <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i>{{add3}}</a>
-        </div>
-
-      </div>
-    </div>
-    <div class="forms">
-      <h1>{{formHead}}</h1>
-      <input type="text" placeholder="Full Name"><br>
-      <input type="text" placeholder="Phone"><br>
-      <input type="email" placeholder="Email"><br>
-      <textarea placeholder="Message" rows="3"></textarea><br>
-      <button>Send Message</button>
-    </div>
-  </div>
-
-  <!-- ____________________________________________________________________ -->
-
-  <div class="footer">
-    <div class="firstfooter">
-      <div class="cont1">
-        <h3>{{footerhead.headMian}}</h3>
-        <p>{{footerhead.head1}} <span style="color:#d66f37">{{footerhead.head2}}</span> {{footerhead.head3}}<span
-            style="color:#d66f37"> {{footerhead.head4}}</span></p>
-      </div>
-      <div class="cont2">
-        <input type="text" placeholder="Email"><span><button>{{footerhead.head5}}</button></span>
-        <p>{{footerhead.head6}}</p>
-      </div>
-    </div>
-    <div class="division">
-      <div>
-        <div class="hr">
-          <h3>{{footer1.head}}</h3>
-          <ul>
-            <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{footer1.mail}}</a></li>
-            <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{footer1.number}}</a></li>
-          </ul>
-        </div>
-        <div class="sales">
-          <h3>{{footer2.head}}</h3>
-          <ul>
-            <li><a href="">{{footer2.mail}}</a></li>
-            <li><a href="">{{footer2.number}}</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="help">
-        <h3>{{helphead}}</h3>
-        <ul>
-          <li *ngFor="let help of helps"><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{help}}</a></li>
-        </ul>
-      </div>
-      <div class="service">
-        <h3>{{servicehead}}</h3>
-        <ul>
-          <li *ngFor="let servicefooter of servicesfooters"><a href="">{{servicefooter}}</a></li>
-        </ul>
-      </div>
-      <div class="hire">
-        <h3>{{hirehead}}</h3>
-        <ul>
-          <li *ngFor="let hire of hires"><a href="">{{hire}}</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="lastfooterdiv">
-      <img src="../assets/images/tagline-stamp.png">
-      <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">Follow Us <i
-            class="bi bi-facebook"></i>
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-globe"></i>
-
-        </a></div>
-      <p>©<span style="color:#d66f37"> {{footerhead.head7}}</span> {{footerhead.head8}}<a href=""
-          style="text-decoration: none;color:#d66f37">{{footerhead.head9}}</a></p>
-    </div>
-  </div>
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
