@@ -207,17 +207,16 @@
     <div class="address">
 
       <h4>{{address}}</h4>
-
-      <div class="place" *ngFor="let address of addresses">
+      <!-- <div class="place" *ngFor="let address of addresses">
         <h6>{{address.head}}</h6>
         <p class="add-city">{{address.add}}</p>
         <a href="tel:+91 99138 08285" class="contact mobile-no"><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
           {{address.number}} </a>
-      </div>
+      </div> -->
+      <app-address [addressDatas]=" addresses"></app-address>
       <div class="place">
         <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i>{{add3}}</a>
       </div>
-
     </div>
   </div>
   <div class="forms">
@@ -281,7 +280,7 @@
     </div>
 
   </div>
-
+  <hr>
   <div class="lastfooterdiv">
     <img src="../assets/images/tagline-stamp.png">
     <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">Follow Us <i class="bi bi-facebook"></i>

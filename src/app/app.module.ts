@@ -14,6 +14,8 @@ import { TechnofrontComponent } from './technofront/technofront.component';
 import { TaglineexpcardComponent } from './taglineexpcard/taglineexpcard.component';
 import { TaglineclientratingComponent } from './taglineclientrating/taglineclientrating.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { AddressComponent } from './address/address.component';
+import { AwardComponent } from './award/award.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BlogsComponent } from './blogs/blogs.component';
     TechnofrontComponent,
     TaglineexpcardComponent,
     TaglineclientratingComponent,
-    BlogsComponent
+    BlogsComponent,
+    AddressComponent,
+    AwardComponent
   ],
   imports: [
     BrowserModule,
