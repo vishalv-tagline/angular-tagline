@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.row .menu {
+    width: 25%;
+    box-shadow: 5px 0 #d66f37,0 0 10px rgb(168, 167, 167);
+
+}
+
+.frontend {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+
+.frontend div {
+    padding: 45px 42px 20px 40px;
+}
+
+.frontend img {
+    height: 50px;
+    max-width: 100px;
+}
+
+.frontend h3 {
+    font-weight: 300;
+    text-align: center;
+}

@@ -85,32 +85,31 @@
 <span class="headerline"></span>
 <div class="row">
   <div class="menu">
-    <ul>
+    <app-technologinames [technoNames]="tecnologies"></app-technologinames>
+    <!-- <ul>
       <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
-    </ul>
+    </ul> -->
   </div>
+
   <div class="language">
     <div class="web">
       <h1>{{tech.subHead}}</h1>
       <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
-      <div class="backend">
+      <!-- <div class="backend">
         <div class="ror" *ngFor="let backend of backends">
           <img [src]="backend.image" alt="ror">
           <h3>{{backend.title}}</h3>
         </div>
-      </div>
-
+      </div> -->
+      <app-technoback [backendsData]="backends"></app-technoback>
       <h2>{{tech.title2}}</h2>
-      <div class="frontend">
+      <!-- <div class="frontend">
         <div class="react" *ngFor="let frontend of frontends">
           <img [src]="frontend.image">
           <h3>{{frontend.title}}</h3>
         </div>
-        <div class="html">
-          <img src="">
-          <h3></h3>
-        </div>
-      </div>
+      </div> -->
+      <app-technofront [frontendsData]="frontends"></app-technofront>
     </div>
   </div>
 </div>

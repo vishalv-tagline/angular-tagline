@@ -1,0 +1,45 @@
+.row .menu {
+    width: 25%;
+    box-shadow: 5px 0 #d66f37,0 0 10px rgb(168, 167, 167);
+
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 33px 10px 10px 53px;
+}
+
+// .row .menu ul li.active,
+// li:hover {
+//     border: 2px dotted #d66f37;
+// }
+
+.menu ul li:first-child {
+    box-shadow: inset 7px 0em #D96122;
+}
+
+.menu ul li:first-child a {
+    color: #d66f37;
+
+}
+
+.menu ul li a {
+
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.3rem;
+    line-height: 1.5;
+
+}
+
+.menu ul li a:hover {
+    color: #d66f37;
+}
+
+.menu ul li a:active {
+    color: #d66f37;
+}

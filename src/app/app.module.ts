@@ -8,6 +8,9 @@ import { OurservicesComponent } from './ourservices/ourservices.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExpriencerightComponent } from './exprienceright/exprienceright.component';
 import { ExprienceleftComponent } from './exprienceleft/exprienceleft.component';
+import { TechnologinamesComponent } from './technologinames/technologinames.component';
+import { TechnobackComponent } from './technoback/technoback.component';
+import { TechnofrontComponent } from './technofront/technofront.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ExprienceleftComponent } from './exprienceleft/exprienceleft.component'
     OurservicesComponent,
     NavbarComponent,
     ExpriencerightComponent,
-    ExprienceleftComponent
+    ExprienceleftComponent,
+    TechnologinamesComponent,
+    TechnobackComponent,
+    TechnofrontComponent
   ],
   imports: [
     BrowserModule,
