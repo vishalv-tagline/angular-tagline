@@ -171,13 +171,13 @@
 
 
 <div class="awards">
-  <!-- <div class="awardhead"> -->
-  <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
-  <!-- </div> -->
-  <div class="awardimage" *ngFor="let award of awards">
-    <img [src]="award" height="160" width="160">
+  <div class="awardhead">
+    <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
   </div>
-
+  <!-- <div class="awardimage" *ngFor="let award of awards">
+    <img [src]="award" height="160" width="160">
+  </div> -->
+  <app-award [awardDatas]="awards"></app-award>
 </div>
 
 <!-- ____________________________________________________________________ -->
