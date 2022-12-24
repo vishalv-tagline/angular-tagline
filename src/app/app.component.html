@@ -1,5 +1,5 @@
 <div class="topbar">
-  <div class="header">
+  <!-- <div class="header">
     <nav>
       <ul>
         <img src="../assets/images/tagline.png">
@@ -33,8 +33,8 @@
         </div>
       </ul>
     </nav>
-  </div>
-
+  </div> -->
+  <app-navbar [navbarItems]="navbar"></app-navbar>
   <div class="headtext">
     <h1>{{heading.head1}}<br>{{heading.head2}}</h1>
     <h1>{{heading.title1}}<span> {{heading.title2}}</span></h1>
@@ -46,7 +46,6 @@
 
 <!-- ___________________________________________________________ -->
 
-
 <div class="services">
   <h1>{{serv.title1}}</h1>
   <span class="headerline"></span>
@@ -55,21 +54,27 @@
       <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{serv.title2}}<br> <span
           style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
     </div>
-
-    <div class="divcontent divcontent2" *ngFor="let service of services">
+    <!-- <div class="divcontent divcontent2" *ngFor="let service of services">
       <div class="flex">
         <img [src]="service.images" alt="logo">
         <h2>{{service.title}}</h2>
       </div>
       <p>{{service.description}}</p>
       <a href="#">{{service.button}}</a>
+    </div> -->
+    <div>
+      <app-ourservices></app-ourservices>
     </div>
+
     <div class="divcontent divcontent7">
       <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
       <button>{{serv.title7}}</button>
     </div>
   </div>
 </div>
+
+
+
 
 <!-- ___________________________________________________________ -->
 <div class="experience">
@@ -111,7 +116,6 @@
     </div> -->
   </div>
 </div>
-
 
 <!-- ____________________________________________________________________ -->
 

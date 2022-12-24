@@ -1,0 +1,14 @@
+<!-- <p>navbar works!</p> -->
+<div class="header">
+    <nav>
+        <ul>
+            <img src="../assets/images/tagline.png">
+            <li *ngFor="let navbaritem of navbarItems"><a href="#">{{ navbaritem }}</a>
+                <select></select>
+            </li>
+            <div class="btnget">
+                <button [type]="btntype" style="display: flex; justify-content: end;">GET QUOTE</button>
+            </div>
+        </ul>
+    </nav>
+</div>

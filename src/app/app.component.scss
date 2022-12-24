@@ -12,71 +12,71 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(196, 196, 196, 0) .01%, rgba(217, 97, 34, .2) 100%), url(../assets/images/topimg.webp);
 }
 
-ul {
-    display: flex;
-    position: sticky;
-}
+// ul {
+//     display: flex;
+//     position: sticky;
+// }
 
-.header{
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    right: 0;
-    flex-wrap: wrap;
-    background-color: white;
+// .header{
+//     position: fixed;
+//     z-index: 9999;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     flex-wrap: wrap;
+//     background-color: white;
     
-}
+// }
 
-.header nav img {
-    margin: 10px 8%;
-}
+// .header nav img {
+//     margin: 10px 8%;
+// }
 
-nav ul li {
-    list-style-type: none;
-    padding: 25px 10px;
-    font-size: 18px;
-    font-family: sans-serif;
-}
+// nav ul li {
+//     list-style-type: none;
+//     padding: 25px 10px;
+//     font-size: 18px;
+//     font-family: sans-serif;
+// }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
+// nav ul li a {
+//     text-decoration: none;
+//     color: black;
+// }
 
-nav ul li select {
-    border: none;
-    font-size: 18px;
-    font-family: sans-serif;
+// nav ul li select {
+//     border: none;
+//     font-size: 18px;
+//     font-family: sans-serif;
 
-}
+// }
 
-ul .btnget {
-    display: flex;
-    justify-content: center;
-    width: 38%;
-}
+// ul .btnget {
+//     display: flex;
+//     justify-content: center;
+//     width: 38%;
+// }
 
-nav ul button {
-    margin-top: 20px;
-    height: 45px;
-    padding: 17px 28px;
-    border: none;
-    border-radius: 5px;
-    /* background-color: rgba(178, 28, 28, 0.593); */
-    background: rgba(217, 97, 34, .3);
-    color: #da6427;
-    min-width: 20%;
-    text-align: center;
-    cursor: pointer;
-}
+// nav ul button {
+//     margin-top: 20px;
+//     height: 45px;
+//     padding: 17px 28px;
+//     border: none;
+//     border-radius: 5px;
+//     /* background-color: rgba(178, 28, 28, 0.593); */
+//     background: rgba(217, 97, 34, .3);
+//     color: #da6427;
+//     min-width: 20%;
+//     text-align: center;
+//     cursor: pointer;
+// }
 
-nav ul button:hover {
-    border-radius: 5px;
-    background-color: white;
-    transition: all .5s ease-in;
-    border: 1px solid #D96122;
-}
+// nav ul button:hover {
+//     border-radius: 5px;
+//     background-color: white;
+//     transition: all .5s ease-in;
+//     border: 1px solid #D96122;
+// }
 
 /* ____________________________________________________________________ */
 
@@ -136,20 +136,20 @@ nav ul button:hover {
     margin-top: 50px;
 }
 
-.services .headerline{
-    display: flex;
-    justify-content: center;
-    width: 175px;
-    margin: auto;
-    height: 2px;
-    background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
-}
+// .services .headerline{
+//     display: flex;
+//     justify-content: center;
+//     width: 175px;
+//     margin: auto;
+//     height: 2px;
+//     background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
+// }
 
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 35px 180px;
-}
+// .boxes {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 35px 180px;
+// }
 
 .boxes .divcontent {
     width: 30%;
@@ -171,25 +171,25 @@ nav ul button:hover {
     align-items: center;
 }
 
-.boxes .divcontent p {
-    font-size: 19px;
-    font-family: poppins, sans-serif;
-    padding: 15px 25px;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
+// .boxes .divcontent p {
+//     font-size: 19px;
+//     font-family: poppins, sans-serif;
+//     padding: 15px 25px;
+//     line-height: 30px;
+//     letter-spacing: 1px;
+//     font-weight: 400;
+//     margin-bottom: 25px;
+// }
 
-.boxes .divcontent a {
-    color: #D96122;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 17px;
-    cursor: pointer;
-    font-family: poppins, sans-serif;
-    padding: 30px 25px;
-}
+// .boxes .divcontent a {
+//     color: #D96122;
+//     text-decoration: none;
+//     font-weight: 700;
+//     font-size: 17px;
+//     cursor: pointer;
+//     font-family: poppins, sans-serif;
+//     padding: 30px 25px;
+// }
 
 .boxes .divcontent7 {
     background: #D96122;
@@ -226,7 +226,6 @@ nav ul button:hover {
     color: #D96122;
     transition: all ease-in .3s;
 }
-
 
 /* ________________________________________________________________________ */
 .experience {
