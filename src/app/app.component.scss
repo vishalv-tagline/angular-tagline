@@ -451,15 +451,15 @@
     margin-top: 60px;
 }
 
-// .headerline{
-//     display: flex;
-//     justify-content: center;
-//     width: 250px;
-//     margin: auto;
-//     margin-top: 20px;
-//     height: 2px;
-//     background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
-// }
+.headerline{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    height: 2px;
+    background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
+}
 
 .taglinewhyp{
     text-align: center;
@@ -660,8 +660,7 @@
     flex-wrap: wrap;
 }
 
-.awards .awardimage img{
-    
+.awards .awardimage img{   
     margin: 20px;
 }
 /* .award .awardhead h1{
@@ -687,7 +686,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 90px;
-
 }
 
 .blogs .bloggers .blog {

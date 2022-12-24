@@ -186,7 +186,7 @@
   <h1>Our Blogs</h1>
   <span class="headerline"></span>
   <div class="bloggers">
-    <div class="blog" *ngFor="let blog of blogs">
+    <!-- <div class="blog" *ngFor="let blog of blogs">
       <img [src]="blog.image">
       <div style="display: flex;justify-content: space-between;">
         <button>{{blog.button}}</button>
@@ -195,7 +195,8 @@
       <h3>{{blog.head1}}</h3>
       <p>{{blog.des}}</p>
       <a href="#">{{blog.endbtn}}</a>
-    </div>
+    </div> -->
+    <app-blogs [blogData]="blogs"></app-blogs>
   </div>
 </div>
 
