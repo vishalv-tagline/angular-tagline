@@ -451,15 +451,15 @@
     margin-top: 60px;
 }
 
-.headerline{
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
-    height: 2px;
-    background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
-}
+// .headerline{
+//     display: flex;
+//     justify-content: center;
+//     width: 250px;
+//     margin: auto;
+//     margin-top: 20px;
+//     height: 2px;
+//     background: radial-gradient(50% 151250% at 50% -100%,#d96122 0%,rgba(255,255,255,0) 100%);
+// }
 
 .taglinewhyp{
     text-align: center;
@@ -476,66 +476,66 @@
     margin: 35px 70px;
 }
 
-.empowers .empowerbox{
-    max-width: 28%;
-    border: 1px solid #929292;
-    padding: 35px;
-}
+// .empowers .empowerbox{
+//     max-width: 28%;
+//     border: 1px solid #929292;
+//     padding: 35px;
+// }
 
-.empowers .empowerbox .imgnumflex{
-    display: flex;
-    justify-content: space-between;
-}
+// .empowers .empowerbox .imgnumflex{
+//     display: flex;
+//     justify-content: space-between;
+// }
 
-.empowers .empowerbox .imgnumflex h1{
-    color: #D96122;
-    opacity: 0.3;
-    font-size: 50px;
-}
+// .empowers .empowerbox .imgnumflex h1{
+//     color: #D96122;
+//     opacity: 0.3;
+//     font-size: 50px;
+// }
 
-.empowers .empowerbox img{
-    margin: 10px;
-}
-.empowers .empowerbox h2{
-    color: #D96122;
-    margin: 10px;
-}
+// .empowers .empowerbox img{
+//     margin: 10px;
+// }
+// .empowers .empowerbox h2{
+//     color: #D96122;
+//     margin: 10px;
+// }
 
-.empowers .empowerbox p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #484848;
-    margin: 10px;
+// .empowers .empowerbox p{
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 25px;
+//     color: #484848;
+//     margin: 10px;
 
-}
+// }
 
-.empowerbox:first-child{
-    border-top: none;
-    border-left: none;
-}
-.empowerbox:nth-child(2){
-    border-top: none;
-}
+// .empowerbox:first-child{
+//     border-top: none;
+//     border-left: none;
+// }
+// .empowerbox:nth-child(2){
+//     border-top: none;
+// }
 
-.empowerbox:nth-child(3){
-    border-top: none;
-    border-right: none;
-}
+// .empowerbox:nth-child(3){
+//     border-top: none;
+//     border-right: none;
+// }
 
-.empowerbox:nth-child(4){
-    border-bottom: none;
-    border-left: none;
-}
+// .empowerbox:nth-child(4){
+//     border-bottom: none;
+//     border-left: none;
+// }
 
-.empowerbox:nth-child(5){
-    border-bottom: none;
-}
+// .empowerbox:nth-child(5){
+//     border-bottom: none;
+// }
 
-.empowerbox:nth-child(6){
-    border-bottom: none;
-    border-right: none;
-}
+// .empowerbox:nth-child(6){
+//     border-bottom: none;
+//     border-right: none;
+// }
 
 .empowers .lastempowerbox h1{
     font-size: 25px;
@@ -574,7 +574,6 @@
 .reviews .reviewword{
     max-width: 25%; 
     margin-left: 140px;
-
 }
 
 .reviews .reviewword h1{
@@ -592,56 +591,56 @@
     line-height: 30px;
 }
 
-.reviews .reviewsboxes{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* max-width: 63%; */
-}
+// .reviews .reviewsboxes{
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     /* max-width: 63%; */
+// }
 
-.reviews .reviewsboxes .revbox{
-    box-shadow: 0 3px 8px rgb(0 0 0 / 8%);
-    margin: 12px;
-    max-width: 25%;
-}
+// .reviews .reviewsboxes .revbox{
+//     box-shadow: 0 3px 8px rgb(0 0 0 / 8%);
+//     margin: 12px;
+//     max-width: 25%;
+// }
 
-.reviews .reviewsboxes .revbox p{
-    font-size: 15px;
-    margin: 6px 12px;
-    line-height: 17px;
-    margin-bottom: 40px;
-}
+// .reviews .reviewsboxes .revbox p{
+//     font-size: 15px;
+//     margin: 6px 12px;
+//     line-height: 17px;
+//     margin-bottom: 40px;
+// }
 
-.reviews .reviewsboxes .revbox small{
-    font-size: 13px;
-    margin: 12px;
-    padding-top: 34px;
-}
+// .reviews .reviewsboxes .revbox small{
+//     font-size: 13px;
+//     margin: 12px;
+//     padding-top: 34px;
+// }
 
-.reviews .reviewsboxes .revbox .rating{
-    display: flex;
-}
+// .reviews .reviewsboxes .revbox .rating{
+//     display: flex;
+// }
 
-.reviews .reviewsboxes .revbox .rating h3{
-    margin: 12px;
-}
+// .reviews .reviewsboxes .revbox .rating h3{
+//     margin: 12px;
+// }
 
-.reviews .reviewsboxes .revbox .rating .icon{
-    margin: 12px;
-    color: red;
-}
+// .reviews .reviewsboxes .revbox .rating .icon{
+//     margin: 12px;
+//     color: red;
+// }
 
-.reviews .reviewsboxes .revbox .verified{
-    display: flex;
-    color: #585656;
-    font-size: 14px;
-    margin-left: 12px;
-    margin-top: 3px;
-}
+// .reviews .reviewsboxes .revbox .verified{
+//     display: flex;
+//     color: #585656;
+//     font-size: 14px;
+//     margin-left: 12px;
+//     margin-top: 3px;
+// }
 
-.reviews .reviewsboxes .revbox .verified p{
-    margin: 3px;
-}
+// .reviews .reviewsboxes .revbox .verified p{
+//     margin: 3px;
+// }
 
 
 

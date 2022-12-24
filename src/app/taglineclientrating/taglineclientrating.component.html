@@ -1,0 +1,21 @@
+<!-- <p>taglineclientrating works!</p> -->
+<div class="reviewsboxes">
+    <div class="revbox" *ngFor="let review of reviesDatas">
+        <div class="rating">
+            <h3>{{review.head}}</h3>
+            <div class="icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+        <p>{{review.des}}</p>
+        <small>{{review.name}}</small>
+        <div class="verified">
+            <i class="bi bi-patch-check-fill"></i>&nbsp;
+            <p>{{review.verify}}</p>
+        </div>
+    </div>
+</div>

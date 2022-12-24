@@ -1,0 +1,13 @@
+<!-- <p>taglineexpcard works!</p> -->
+<div class="headerline">
+    <div class="empowers">
+        <div class="empowerbox" *ngFor="let choose of chooseDatas">
+            <div class="imgnumflex">
+                <img [src]="choose.image">
+                <h1>{{choose.title1}}</h1>
+            </div>
+            <h2>{{choose.title2}}</h2>
+            <p>{{choose.des}}</p>
+        </div>
+    </div>
+</div>

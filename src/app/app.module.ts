@@ -11,6 +11,8 @@ import { ExprienceleftComponent } from './exprienceleft/exprienceleft.component'
 import { TechnologinamesComponent } from './technologinames/technologinames.component';
 import { TechnobackComponent } from './technoback/technoback.component';
 import { TechnofrontComponent } from './technofront/technofront.component';
+import { TaglineexpcardComponent } from './taglineexpcard/taglineexpcard.component';
+import { TaglineclientratingComponent } from './taglineclientrating/taglineclientrating.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TechnofrontComponent } from './technofront/technofront.component';
     ExprienceleftComponent,
     TechnologinamesComponent,
     TechnobackComponent,
-    TechnofrontComponent
+    TechnofrontComponent,
+    TaglineexpcardComponent,
+    TaglineclientratingComponent
   ],
   imports: [
     BrowserModule,
