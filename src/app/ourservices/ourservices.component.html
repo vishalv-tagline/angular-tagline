@@ -1,13 +1,7 @@
 <!-- <p>ourservices works!</p> -->
 <div class="services">
-    <!-- <h1>{{serv.title1}}</h1> -->
-    <!-- <span class="headerline"></span> -->
     <div class="boxes">
-        <!-- <div class="divcontent divcontent1" style="border: none;">
-            <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{serv.title2}}<br> <span
-                    style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
-        </div> -->
-        <div class="divcontent divcontent2" *ngFor="let service of services">
+        <div class="divcontent divcontent2" *ngFor="let service of servDataes">
             <div class="flex">
                 <img [src]="service.images" alt="logo">
                 <h2>{{service.title}}</h2>
@@ -15,9 +9,5 @@
             <p>{{service.description}}</p>
             <a href="#">{{service.button}}</a>
         </div>
-        <!-- <div class="divcontent divcontent7">
-            <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
-            <button>{{serv.title7}}</button>
-        </div> -->
     </div>
 </div>
