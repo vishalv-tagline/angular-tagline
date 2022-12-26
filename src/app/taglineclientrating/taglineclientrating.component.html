@@ -3,12 +3,13 @@
         <div class="rating">
             <h3>{{review.head}}</h3>
             <div class="icon">
-                <div *ngFor="let num of reviewNum">
+                <!-- <div *ngFor="let num of reviewNum">
                     <p *ngIf="review.head  == '5.0'">
                         <i class="bi bi-star-fill"></i>
                     </p>
-                </div>
+                </div> -->
                 <!-- <i *ngFor="let num of reviewNum" class="bi bi-star"></i> -->
+                <ngb-rating [max]="5" [(rate)]="review.head" [readonly]="false"></ngb-rating>
             </div>
         </div>
         <p>{{review.des}}</p>

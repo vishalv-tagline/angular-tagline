@@ -8,11 +8,12 @@
 .boxes{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;    
+    flex-direction: row;
+    margin-left: 230px; 
 }
 
 .boxes .divcontent {
-    width: 30%;
+    width: 25%;
     padding: 20px;
     margin: 40px 20px;
 }
@@ -20,9 +21,16 @@
 .boxes .divcontent {
     box-shadow: 5px 5px 75px rgb(0 0 0 / 10%);
 }
+
 .boxes .divcontent .flex {
     display: flex;
     align-items: center;
+}
+
+.boxes .divcontent h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
 }
 
 .boxes .divcontent p {

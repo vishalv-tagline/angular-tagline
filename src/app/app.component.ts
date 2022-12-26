@@ -1,52 +1,6 @@
 import { Component } from '@angular/core';
-import { Address, Blog, Choose, Heading, Inqury, Iservices, Languages, Numexp, Reviews } from './common';
-interface ServicesAll {
-  title1: string,
-  title2: string,
-  title3: string,
-  title4: string,
-  title5: string,
-  title6: string,
-  title7: string
-}
+import { Address, Blog, Choose, ChooseEnd, Experience, Footermain, Heading, Inqury, Iservices, Languages, Numexp, ReviewHead, Reviews, ServicesAll, TechHead } from './common';
 
-interface Experience {
-  title: string,
-  des: string,
-}
-interface ReviewHead {
-  mainHead: string,
-  des1: string,
-  des2: string
-}
-interface ChooseEnd {
-  title1: string,
-  title2: string,
-  title3: string,
-  title4: string,
-  btn: string
-}
-
-
-interface Footermain {
-  headMian: string,
-  head1: string,
-  head2: string,
-  head3: string,
-  head4: string,
-  head5: string,
-  head6: string,
-  head7: string,
-  head8: string,
-  head9: string
-}
-
-interface TechHead {
-  head: string,
-  subHead: string,
-  title1: string,
-  title2: string
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -396,44 +350,44 @@ export class AppComponent {
     'Hire React Native Developer'
   ]
 
-  ratNum: string[] = ['1.0', '2.0', '3.0', '4.0', '5.0'];
+
   reviews: Reviews[] = [
     {
-      head: '5.0',
+      head: 1,
       des: '"Everything always turns out perfectly done."',
       name: 'IT & Computer Scientict and self employe',
       verify: 'Verified Review'
     },
 
     {
-      head: '5.0',
+      head: 2,
       des: '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
       name: 'Founder, Cimpro.io',
       verify: 'Verified Review'
     },
 
     {
-      head: '5.0',
+      head: 3,
       des: '"…they’re able to tackle pretty much everything you throw at them."',
       name: 'CEO, Promoprep',
       verify: 'Verified Review'
     },
 
     {
-      head: '5.0',
+      head: 4,
       des: '"The team takes up new challenges and finishes the project on time."',
       name: 'Software Architect, Specialty Finance Company',
       verify: 'Verified Review'
     },
 
     {
-      head: '5.0',
+      head: 5,
       des: '"We are getting close to launch now and its been a tremendous help to have their developers on my team."',
       name: 'Owner, e-Commerce Support Company',
       verify: 'Verified Review'
     },
     {
-      head: '5.0',
+      head: 4,
       des: 'When things go wrong, they were good at adepting and problem solving on the fly',
       name: 'CEO,SupplimentSnoop',
       verify: 'Verified Review'

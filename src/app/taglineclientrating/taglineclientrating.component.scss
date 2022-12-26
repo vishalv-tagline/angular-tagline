@@ -32,7 +32,7 @@
 }
 
 .reviewsboxes .revbox .rating .icon{
-    margin: 13px;
+    margin: 11px;
     color: red;
 }
 
@@ -46,4 +46,10 @@
 
 .reviewsboxes .revbox .verified p{
     margin: 3px;
+}
+
+ngb-rating {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
 }

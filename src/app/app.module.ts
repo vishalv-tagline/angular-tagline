@@ -20,6 +20,7 @@ import { FhelpadviceComponent } from './fhelpadvice/fhelpadvice.component';
 import { FservicesComponent } from './fservices/fservices.component';
 import { FhiredevlComponent } from './fhiredevl/fhiredevl.component';
 import { InquieryComponent } from './inquiery/inquiery.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { InquieryComponent } from './inquiery/inquiery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

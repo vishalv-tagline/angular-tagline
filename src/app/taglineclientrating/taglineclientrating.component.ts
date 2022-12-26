@@ -8,18 +8,18 @@ import { Reviews } from '../common';
 })
 export class TaglineclientratingComponent implements OnInit {
 
-  @Input() reviewNum: string[] = [];
+  starRating: number = 0;
 
   @Input() reviesDatas!: Reviews[];
-  // numbers: number[] = [0, 1, 2, 3, 4];
+
 
 
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log('object :>> ', this.reviesDatas);
-    console.log('object :>> ', this.reviewNum);
+    // console.log('object :>> ', this.reviesDatas);
+    // console.log('object :>> ', this.reviewNum);
   }
 
 }

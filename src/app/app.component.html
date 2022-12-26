@@ -15,10 +15,10 @@
   <h1>{{serv.title1}}</h1>
   <span class="headerline"></span>
   <div class="boxes">
-    <!-- <div class="divcontent divcontent1" style="border: none;">
+    <div class="divcontent divcontent1" style="border: none;">
       <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{serv.title2}}<br> <span
           style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
-    </div> -->
+    </div>
     <!-- <div class="divcontent divcontent2" *ngFor="let service of services">
       <div class="flex">
         <img [src]="service.images" alt="logo">
@@ -29,12 +29,13 @@
     </div> -->
     <app-ourservices [servDataes]="servicess"></app-ourservices>
 
-    <!-- <div class="divcontent divcontent7">
+    <div class="divcontent divcontent7">
       <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
       <button>{{serv.title7}}</button>
     </div>
-  </div> -->
   </div>
+
+
 
   <!-- ___________________________________________________________ -->
   <div class="experience">
@@ -163,7 +164,7 @@
         <p>{{review.verify}}</p>
       </div>
     </div> -->
-    <app-taglineclientrating [reviewNum]="ratNum" [reviesDatas]="reviews"></app-taglineclientrating>
+    <app-taglineclientrating [reviesDatas]="reviews"></app-taglineclientrating>
   </div>
 </div>
 
@@ -291,7 +292,6 @@
         <i class="bi bi-twitter"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-globe"></i>
-
       </a></div>
     <p>©<span style="color:#d66f37"> {{footerhead.head7}}</span> {{footerhead.head8}}<a href=""
         style="text-decoration: none;color:#d66f37">{{footerhead.head9}}</a></p>
