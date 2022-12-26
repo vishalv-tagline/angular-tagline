@@ -1,9 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Languages {
-  image: string,
-  title: string
-}
-
+import { Languages } from '../common';
 @Component({
   selector: 'app-technoback',
   templateUrl: './technoback.component.html',

@@ -1,12 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Blog {
-  image: string,
-  button: string,
-  date: string,
-  head1: string,
-  des: string,
-  endbtn: string
-}
+import { Blog } from '../common';
+
 @Component({
   selector: 'app-blogs',
   templateUrl: './blogs.component.html',

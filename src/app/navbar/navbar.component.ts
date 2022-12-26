@@ -1,11 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Navbar {
-  about: string;
-  heiD: string;
-  tech: string,
-  indu: string
-}
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',

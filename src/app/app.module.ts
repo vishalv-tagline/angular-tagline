@@ -16,6 +16,10 @@ import { TaglineclientratingComponent } from './taglineclientrating/taglineclien
 import { BlogsComponent } from './blogs/blogs.component';
 import { AddressComponent } from './address/address.component';
 import { AwardComponent } from './award/award.component';
+import { FhelpadviceComponent } from './fhelpadvice/fhelpadvice.component';
+import { FservicesComponent } from './fservices/fservices.component';
+import { FhiredevlComponent } from './fhiredevl/fhiredevl.component';
+import { InquieryComponent } from './inquiery/inquiery.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { AwardComponent } from './award/award.component';
     TaglineclientratingComponent,
     BlogsComponent,
     AddressComponent,
-    AwardComponent
+    AwardComponent,
+    FhelpadviceComponent,
+    FservicesComponent,
+    FhiredevlComponent,
+    InquieryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-interface Numexp {
-  image: string,
-  heading: string,
-  head2: string
-}
+import { Numexp } from '../common';
 
 @Component({
   selector: 'app-exprienceright',

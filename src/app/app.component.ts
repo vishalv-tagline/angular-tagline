@@ -1,23 +1,5 @@
 import { Component } from '@angular/core';
-
-// interface Navbar {
-//   about: string;
-//   heiD: string;
-//   tech: string,
-//   indu: string
-// }
-
-interface Heading {
-  head1: string,
-  head2: string,
-  title1: string,
-  title2: string,
-  des1: string,
-  des2: string,
-  button: string,
-  image: string
-}
-
+import { Address, Blog, Choose, Heading, Inqury, Iservices, Languages, Numexp, Reviews } from './common';
 interface ServicesAll {
   title1: string,
   title2: string,
@@ -28,71 +10,21 @@ interface ServicesAll {
   title7: string
 }
 
-interface Iservices {
-  images: string,
-  title: string,
-  description: string,
-  button: string
-}
-
 interface Experience {
   title: string,
   des: string,
 }
-
-interface Numexp {
-  image: string,
-  heading: string,
-  head2: string
-}
-
-interface Languages {
-  image: string,
-  title: string
-}
-
-interface Choose {
-  image: string,
-  title1: string,
-  title2: string,
-  des: string
-}
-
 interface ReviewHead {
   mainHead: string,
   des1: string,
   des2: string
 }
-
-
-interface Blog {
-  image: string,
-  button: string,
-  date: string,
-  head1: string,
-  des: string,
-  endbtn: string
-}
-
 interface ChooseEnd {
   title1: string,
   title2: string,
   title3: string,
   title4: string,
   btn: string
-}
-
-interface Address {
-  head: string,
-  add: string,
-  number: string
-  email?: string
-}
-
-interface Inqury {
-  head: string,
-  mail: string,
-  number: string
 }
 
 
@@ -115,14 +47,6 @@ interface TechHead {
   title1: string,
   title2: string
 }
-
-interface Reviews {
-  head: string,
-  des: string,
-  name: string,
-  verify: string
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -130,15 +54,6 @@ interface Reviews {
 })
 export class AppComponent {
   title = 'taglineProject';
-
-  // caseStudy: string = 'Case Study'
-
-  // navbar: Navbar = {
-  //   about: 'About',
-  //   heiD: 'Hire developer',
-  //   tech: 'Technology',
-  //   indu: 'Industry'
-  // };
 
   navbar: string[] = ['Case Study', 'About', 'Hire developer', 'Technology', 'Industry']
 
@@ -152,8 +67,6 @@ export class AppComponent {
     button: 'Schedule a meeting',
     image: '../assets/images/images.png'
   }
-
-  // btntype: string = 'Button';
 
   serv: ServicesAll = {
     title1: 'Our Services',
@@ -408,17 +321,16 @@ export class AppComponent {
 
   formHead: string = 'Get Your Free Quote Today';
 
-  footer1: Inqury = {
+  footers: Inqury[] = [{
     head: 'HR Inquiry',
     mail: 'hr@taglineinfotech.com',
     number: '+91 6354362521'
-  }
-
-  footer2: Inqury = {
+  },
+  {
     head: 'Sales Inquiry',
     mail: 'solutions@taglineinfotech.com',
     number: 'Tagline infotech'
-  }
+  }];
 
   awardtitle1: string = 'Awards & '
   awardtitle2: string = 'Recognitions'
@@ -484,6 +396,7 @@ export class AppComponent {
     'Hire React Native Developer'
   ]
 
+  ratNum: string[] = ['1.0', '2.0', '3.0', '4.0', '5.0'];
   reviews: Reviews[] = [
     {
       head: '5.0',

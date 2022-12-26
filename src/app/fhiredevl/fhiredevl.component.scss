@@ -1,0 +1,29 @@
+.hire div h3 {
+    font-size: 25px;
+}
+
+.hire ul {
+    flex-direction: column;
+}
+
+.hire ul li {
+    list-style: none;
+    padding: 15px 0 5px 0;
+}
+
+.hire ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: gray;
+}
+
+.lastfooterdiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.lastfooterdiv div a i {
+    padding: 0 5px 0 10px;
+    font-size: 20px;
+}

@@ -163,7 +163,7 @@
         <p>{{review.verify}}</p>
       </div>
     </div> -->
-    <app-taglineclientrating [reviesDatas]="reviews"></app-taglineclientrating>
+    <app-taglineclientrating [reviewNum]="ratNum" [reviesDatas]="reviews"></app-taglineclientrating>
   </div>
 </div>
 
@@ -215,7 +215,7 @@
       </div> -->
       <app-address [addressDatas]=" addresses"></app-address>
       <div class="place">
-        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i>{{add3}}</a>
+        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i> {{add3}}</a>
       </div>
     </div>
   </div>
@@ -245,41 +245,44 @@
   </div>
   <div class="division">
     <div>
-      <div class="hr">
+      <!-- <div class="hr" *ngFor="let footer of footers">
+        <h3>{{footer.head}}</h3>
+        <ul>
+          <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{footer.mail}}</a></li>
+          <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{footer.number}}</a></li>
+        </ul>
+      </div> -->
+      <app-inquiery [footerDatas]="footers"></app-inquiery>
+      <!-- <div class="sales">
         <h3>{{footer1.head}}</h3>
         <ul>
-          <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{footer1.mail}}</a></li>
-          <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{footer1.number}}</a></li>
+          <li><a href="">{{footer1.mail}}</a></li>
+          <li><a href="">{{footer1.number}}</a></li>
         </ul>
-      </div>
-      <div class="sales">
-        <h3>{{footer2.head}}</h3>
-        <ul>
-          <li><a href="">{{footer2.mail}}</a></li>
-          <li><a href="">{{footer2.number}}</a></li>
-        </ul>
-      </div>
+      </div> -->
     </div>
     <div class="help">
-      <h3>{{helphead}}</h3>
+      <!-- <h3>{{helphead}}</h3>
       <ul>
         <li *ngFor="let help of helps"><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{help}}</a></li>
-      </ul>
+      </ul> -->
+      <app-fhelpadvice [helpHead]="helphead" [helpDatas]="helps"></app-fhelpadvice>
     </div>
     <div class="service">
-      <h3>{{servicehead}}</h3>
+      <!-- <h3>{{servicehead}}</h3>
       <ul>
         <li *ngFor="let servicefooter of servicesfooters"><a href="">{{servicefooter}}</a></li>
-      </ul>
+      </ul> -->
+      <app-fservices [serviceHead]="servicehead" [serviceDatas]="servicesfooters"></app-fservices>
     </div>
     <div class="hire">
-      <h3>{{hirehead}}</h3>
+      <!-- <h3>{{hirehead}}</h3>
       <ul>
         <li *ngFor="let hire of hires"><a href="">{{hire}}</a></li>
-      </ul>
+      </ul> -->
+      <app-fhiredevl [hireHead]="hirehead" [hiredevDatas]="hires"></app-fhiredevl>
     </div>
-
-  </div>
+  </div><br>
   <hr>
   <div class="lastfooterdiv">
     <img src="../assets/images/tagline-stamp.png">

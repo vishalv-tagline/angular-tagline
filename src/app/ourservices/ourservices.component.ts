@@ -1,10 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Iservices {
-  images: string,
-  title: string,
-  description: string,
-  button: string
-}
+import { Iservices } from '../common';
 @Component({
   selector: 'app-ourservices',
   templateUrl: './ourservices.component.html',

@@ -1,14 +1,14 @@
-<!-- <p>taglineclientrating works!</p> -->
 <div class="reviewsboxes">
     <div class="revbox" *ngFor="let review of reviesDatas">
         <div class="rating">
             <h3>{{review.head}}</h3>
             <div class="icon">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+                <div *ngFor="let num of reviewNum">
+                    <p *ngIf="review.head  == '5.0'">
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                </div>
+                <!-- <i *ngFor="let num of reviewNum" class="bi bi-star"></i> -->
             </div>
         </div>
         <p>{{review.des}}</p>

@@ -1,10 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Choose {
-  image: string,
-  title1: string,
-  title2: string,
-  des: string
-}
+import { Choose } from '../common';
+
 @Component({
   selector: 'app-taglineexpcard',
   templateUrl: './taglineexpcard.component.html',

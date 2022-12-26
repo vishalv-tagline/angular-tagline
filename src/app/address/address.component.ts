@@ -1,10 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Address {
-  head: string,
-  add: string,
-  number: string
-  email?: string
-}
+import { Address } from '../common';
+
 @Component({
   selector: 'app-address',
   templateUrl: './address.component.html',
