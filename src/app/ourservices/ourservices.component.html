@@ -1,6 +1,7 @@
 <!-- <p>ourservices works!</p> -->
 <div class="services">
     <div class="boxes">
+        <app-firstourservice></app-firstourservice>
         <div class="divcontent divcontent2" *ngFor="let service of servDataes">
             <div class="flex">
                 <img [src]="service.images" alt="logo">
@@ -9,5 +10,6 @@
             <p>{{service.description}}</p>
             <a href="#">{{service.button}}</a>
         </div>
+        <app-lastourservice></app-lastourservice>
     </div>
 </div>

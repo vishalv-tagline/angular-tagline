@@ -21,16 +21,7 @@ export class AppComponent {
     button: 'Schedule a meeting',
     image: '../assets/images/images.png'
   }
-
-  serv: ServicesAll = {
-    title1: 'Our Services',
-    title2: 'Find the',
-    title3: 'right offers',
-    title4: 'for you.',
-    title5: 'Don\'t know what to choose? ',
-    title6: 'Drop us a line.',
-    title7: 'Contact Us',
-  }
+  servtitle1: string = "Our Services"
 
   servicess: Iservices[] = [
     {
@@ -57,12 +48,13 @@ export class AppComponent {
       description: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
       button: 'Learn More ->'
     },
-    {
-      images: '../assets/images/software-development-1.png',
-      title: 'Software outsourcing company',
-      description: 'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      button: 'Learn More ->'
-    }];
+    // {
+    //   images: '../assets/images/software-development-1.png',
+    //   title: 'Software outsourcing company',
+    //   description: 'Tagline Infotech is an experienced software outsourcing company that provides services for variousbusinesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+    //   button: 'Learn More ->'
+    // }
+  ];
 
   exprience: Experience = {
     title: 'We have the experience',
@@ -240,14 +232,6 @@ export class AppComponent {
       endbtn: 'Read More ->'
     }
   ];
-
-  endblog: ChooseEnd = {
-    title1: 'Empower',
-    title2: ' Your ',
-    title3: 'Business',
-    title4: 'with Dedicated Developers',
-    btn: 'Talk to our Expert'
-  }
 
   address: string = 'Our Global Presence';
 

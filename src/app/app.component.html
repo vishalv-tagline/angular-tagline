@@ -12,13 +12,13 @@
 <!-- ___________________________________________________________ -->
 
 <div class="services">
-  <h1>{{serv.title1}}</h1>
+  <h1>{{servtitle1}}</h1>
   <span class="headerline"></span>
   <div class="boxes">
-    <div class="divcontent divcontent1" style="border: none;">
+    <!-- <div class="divcontent divcontent1" style="border: none;">
       <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{serv.title2}}<br> <span
           style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
-    </div>
+    </div> -->
     <!-- <div class="divcontent divcontent2" *ngFor="let service of services">
       <div class="flex">
         <img [src]="service.images" alt="logo">
@@ -28,11 +28,11 @@
       <a href="#">{{service.button}}</a>
     </div> -->
     <app-ourservices [servDataes]="servicess"></app-ourservices>
-
+    <!-- 
     <div class="divcontent divcontent7">
       <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
       <button>{{serv.title7}}</button>
-    </div>
+    </div> -->
   </div>
 
 
@@ -130,10 +130,10 @@
     <p>{{choose.des}}</p>
   </div> -->
   <app-taglineexpcard [chooseDatas]="chooses"></app-taglineexpcard>
-  <div class="empowerbox lastempowerbox">
+  <!-- <div class="empowerbox lastempowerbox">
     <h1><span>{{endblog.title1}} </span> {{endblog.title2}}<span> {{endblog.title3}}</span> {{endblog.title4}}</h1>
     <button>{{endblog.btn}}</button>
-  </div>
+  </div> -->
 </div>
 
 <!-- ____________________________________________________________________ -->

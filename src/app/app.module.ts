@@ -21,6 +21,9 @@ import { FservicesComponent } from './fservices/fservices.component';
 import { FhiredevlComponent } from './fhiredevl/fhiredevl.component';
 import { InquieryComponent } from './inquiery/inquiery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FirstourserviceComponent } from './firstourservice/firstourservice.component';
+import { LastourserviceComponent } from './lastourservice/lastourservice.component';
+import { LasttaglineexpcardComponent } from './lasttaglineexpcard/lasttaglineexpcard.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FhelpadviceComponent,
     FservicesComponent,
     FhiredevlComponent,
-    InquieryComponent
+    InquieryComponent,
+    FirstourserviceComponent,
+    LastourserviceComponent,
+    LasttaglineexpcardComponent
   ],
   imports: [
     BrowserModule,

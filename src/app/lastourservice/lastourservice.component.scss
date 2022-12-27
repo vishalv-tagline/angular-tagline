@@ -1,0 +1,40 @@
+.divcontent7 {
+    background: #D96122;
+    height: 84%;
+    width: 78%;
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.divcontent7 h2 {
+    font-size: 22px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    margin: 25px 27px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.divcontent7 button {
+    border: none;
+    height: 60px;
+    min-width: 40%;
+    font-size: 22px;
+    background: rgba(255, 195, 164, .5);
+    line-height: 30px;
+    font-weight: 700;
+    padding: 13px 35px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 25px 20px;
+    margin-top: 210px;
+    cursor: pointer;
+}
+
+.divcontent7 button:hover {
+    background-color: #fff;
+    color: #D96122;
+    transition: all ease-in .3s;
+}
