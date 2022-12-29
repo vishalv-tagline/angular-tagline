@@ -62,28 +62,28 @@ export class AppComponent {
   }
   womenImg: string = '../assets/images/woman.webp';
 
-  numbers: Numexp[] = [
-    {
-      image: '../assets/images/contentlogo.webp',
-      heading: '125+',
-      head2: 'Profesional'
-    },
-    {
-      image: '../assets/images/contentlogo2.webp',
-      heading: '450+',
-      head2: 'Completed Projects'
-    },
-    {
-      image: '../assets/images/contentlogo3.webp',
-      heading: '150+',
-      head2: 'Freelance Hours'
-    },
-    {
-      image: '../assets/images/contentlogo4.webp',
-      heading: '5+',
-      head2: 'Years of experience'
-    }
-  ];
+  // numbers: Numexp[] = [
+  //   {
+  //     image: '../assets/images/contentlogo.webp',
+  //     heading: '125+',
+  //     head2: 'Profesional'
+  //   },
+  //   {
+  //     image: '../assets/images/contentlogo2.webp',
+  //     heading: '450+',
+  //     head2: 'Completed Projects'
+  //   },
+  //   {
+  //     image: '../assets/images/contentlogo3.webp',
+  //     heading: '150+',
+  //     head2: 'Freelance Hours'
+  //   },
+  //   {
+  //     image: '../assets/images/contentlogo4.webp',
+  //     heading: '5+',
+  //     head2: 'Years of experience'
+  //   }
+  // ];
 
   tech: TechHead = {
     head: 'Our Technologies',
@@ -92,108 +92,108 @@ export class AppComponent {
     title2: 'Front End'
   }
 
-  backends: Languages[] = [
-    {
-      image: '../assets/images/ror.png',
-      title: 'Ruby on Rails'
-    },
+  // backends: Languages[] = [
+  //   {
+  //     image: '../assets/images/ror.png',
+  //     title: 'Ruby on Rails'
+  //   },
 
-    {
-      image: '../assets/images/python.png',
-      title: 'Pythomn'
-    },
+  //   {
+  //     image: '../assets/images/python.png',
+  //     title: 'Pythomn'
+  //   },
 
-    {
-      image: '../assets/images/node_js.svg',
-      title: 'Node Js'
-    },
+  //   {
+  //     image: '../assets/images/node_js.svg',
+  //     title: 'Node Js'
+  //   },
 
-    {
-      image: '../assets/images/php.png',
-      title: 'Php'
-    },
+  //   {
+  //     image: '../assets/images/php.png',
+  //     title: 'Php'
+  //   },
 
-    {
-      image: '../assets/images/android-java.png',
-      title: 'Java'
-    },
+  //   {
+  //     image: '../assets/images/android-java.png',
+  //     title: 'Java'
+  //   },
 
-    {
-      image: '../assets/images/go.png',
-      title: 'Go Language'
-    },
+  //   {
+  //     image: '../assets/images/go.png',
+  //     title: 'Go Language'
+  //   },
 
-  ];
+  // ];
 
-  frontends: Languages[] = [
-    {
-      image: '../assets/images/react-js.png',
-      title: 'React Js'
-    },
+  // frontends: Languages[] = [
+  //   {
+  //     image: '../assets/images/react-js.png',
+  //     title: 'React Js'
+  //   },
 
-    {
-      image: '../assets/images/angular-icon.png',
-      title: 'Angular'
-    },
+  //   {
+  //     image: '../assets/images/angular-icon.png',
+  //     title: 'Angular'
+  //   },
 
-    {
-      image: '../assets/images/typescript-icon.png',
-      title: 'Typescript'
-    },
+  //   {
+  //     image: '../assets/images/typescript-icon.png',
+  //     title: 'Typescript'
+  //   },
 
-    {
-      image: '../assets/images/vue-js.png',
-      title: 'Vue Js'
-    },
+  //   {
+  //     image: '../assets/images/vue-js.png',
+  //     title: 'Vue Js'
+  //   },
 
-    {
-      image: '../assets/images/meter-js.png',
-      title: 'Mateor Js'
-    },
+  //   {
+  //     image: '../assets/images/meter-js.png',
+  //     title: 'Mateor Js'
+  //   },
 
-    {
-      image: '../assets/images/javascript-icon.png',
-      title: 'Java Script'
-    },
+  //   {
+  //     image: '../assets/images/javascript-icon.png',
+  //     title: 'Java Script'
+  //   },
 
-    {
-      image: '../assets/images/html5.png',
-      title: 'HTML 5'
-    },
-  ];
+  //   {
+  //     image: '../assets/images/html5.png',
+  //     title: 'HTML 5'
+  //   },
+  // ];
 
-  chooses: Choose[] = [
-    {
-      image: '../assets/images/choose-roadmap.png',
-      title1: '01',
-      title2: 'Progressive Roadmap',
-      des: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive'
-    },
-    {
-      image: '../assets/images/choose-project.png',
-      title1: '02',
-      title2: 'Efficient Project Management',
-      des: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently'
-    },
-    {
-      image: '../assets/images/choose-flexible.svg',
-      title1: '03',
-      title2: 'Flexible Engagement Model',
-      des: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.'
-    },
-    {
-      image: '../assets/images/choose-cost.png',
-      title1: '04',
-      title2: 'Cost-Effective',
-      des: 'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring'
-    },
-    {
-      image: '../assets/images/choose-delivery.png',
-      title1: '05',
-      title2: 'Consistent Delivery',
-      des: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.'
-    }
-  ];
+  // chooses: Choose[] = [
+  //   {
+  //     image: '../assets/images/choose-roadmap.png',
+  //     title1: '01',
+  //     title2: 'Progressive Roadmap',
+  //     des: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive'
+  //   },
+  //   {
+  //     image: '../assets/images/choose-project.png',
+  //     title1: '02',
+  //     title2: 'Efficient Project Management',
+  //     des: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently'
+  //   },
+  //   {
+  //     image: '../assets/images/choose-flexible.svg',
+  //     title1: '03',
+  //     title2: 'Flexible Engagement Model',
+  //     des: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.'
+  //   },
+  //   {
+  //     image: '../assets/images/choose-cost.png',
+  //     title1: '04',
+  //     title2: 'Cost-Effective',
+  //     des: 'Our team of developers provides the best development services at affordable prices. We believe thathigh-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring'
+  //   },
+  //   {
+  //     image: '../assets/images/choose-delivery.png',
+  //     title1: '05',
+  //     title2: 'Consistent Delivery',
+  //     des: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.'
+  //   }
+  // ];
 
   chooseHead: string = "Why Choose Tagline Infotech ?";
   chooseDes: string = "We have a team of developers who use their expertise to provide complete web development,mobile app development,testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers that you can hire by mentioning the requirements for your project. Save time and money by hiring our developers for your startup or large-scale company. Our team of developers has the experience to understand the business ideasof the clients to provide solutions that focus on the core values of the business. Here you will find some benefits of hiring developers from us."
