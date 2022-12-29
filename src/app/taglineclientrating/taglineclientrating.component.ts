@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Reviews } from '../common';
+import { ClientrateService } from '../Services/clientrate.service';
 
 @Component({
   selector: 'app-taglineclientrating',
@@ -12,12 +13,11 @@ export class TaglineclientratingComponent implements OnInit {
 
   @Input() reviesDatas!: Reviews[];
 
-
-
-
-  constructor() { }
+  public clientrateData!: Reviews[];
+  constructor(private clientrateService: ClientrateService) { }
 
   ngOnInit(): void {
+    this.clientrateData = this.clientrateService.getData();
     // console.log('object :>> ', this.reviesDatas);
     // console.log('object :>> ', this.reviewNum);
   }
