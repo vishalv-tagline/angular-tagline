@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Inqury } from '../common';
+import { InqueryService } from '../Services/inquery.service';
 
 @Component({
   selector: 'app-inquiery',
@@ -7,11 +8,12 @@ import { Inqury } from '../common';
   styleUrls: ['./inquiery.component.scss']
 })
 export class InquieryComponent implements OnInit {
-
+  public inqueryData!: Inqury[];
   @Input() footerDatas: Inqury[] = [];
-  constructor() { }
+  constructor(private inqueryService: InqueryService) { }
 
   ngOnInit(): void {
+    this.inqueryData = this.inqueryService.getData();
   }
 
 }
