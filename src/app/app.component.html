@@ -15,68 +15,15 @@
   <h1>{{servtitle1}}</h1>
   <span class="headerline"></span>
   <div class="boxes">
-    <!-- <div class="divcontent divcontent1" style="border: none;">
-      <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{serv.title2}}<br> <span
-          style="font-weight: bolder; font-size: 60px;">{{serv.title3}}</span><br>{{serv.title4}}</h1>
-    </div> -->
-    <!-- <div class="divcontent divcontent2" *ngFor="let service of services">
-      <div class="flex">
-        <img [src]="service.images" alt="logo">
-        <h2>{{service.title}}</h2>
-      </div>
-      <p>{{service.description}}</p>
-      <a href="#">{{service.button}}</a>
-    </div> -->
     <app-ourservices></app-ourservices>
-    <!-- 
-    <div class="divcontent divcontent7">
-      <h2>{{serv.title5}}<span style="font-weight: bold;">{{serv.title6}}</span></h2>
-      <button>{{serv.title7}}</button>
-    </div> -->
   </div>
-
-
-
   <!-- ___________________________________________________________ -->
   <div class="experience">
-    <!-- <div class="contentexp">
-      <h2>{{exprience.title}}</h2>
-      <p>{{exprience.des}}</p>
-      <button>Contact Us</button>
-    </div> -->
     <app-exprienceleft [exprienceTitle]="chooseHead" [exprienceDes]="chooseDes"></app-exprienceleft>
-
     <span>
       <img [src]="womenImg" height="550">
     </span>
-    <!--<div class="numberexp">
-      <div class="fulldiv1">
-        <div class="div1" *ngFor="let number of numbers">
-          <img [src]="number.image">
-          <h1>{{number.heading}}</h1>
-          <h5>{{number.head2}}</h5>
-        </div>
-      </div> -->
     <app-exprienceright></app-exprienceright>
-    <!-- <div class="div2">
-        <img [src]="numExp2.image">
-        <h1>{{numExp2.heading}}</h1>
-        <h5>{{numExp2.head2}}</h5>
-      </div>
-    </div>
-
-    <div class="fulldiv2">
-      <div class="div3">
-        <img [src]="numExp3.image">
-        <h1>{{numExp3.heading}}</h1>
-        <h5>{{numExp3.head2}}</h5>
-      </div>
-      <div class="div4">
-        <img [src]="numExp4.image">
-        <h1>{{numExp4.heading}}</h1>
-        <h5>{{numExp4.head2}}</h5>
-      </div>
-    </div>-->
   </div>
 </div>
 
@@ -87,29 +34,14 @@
 <div class="row">
   <div class="menu">
     <app-technologinames [technoNames]="tecnologies"></app-technologinames>
-    <!-- <ul>
-      <li *ngFor="let technology of tecnologies"><a href="">{{technology}}</a></li>
-    </ul> -->
   </div>
 
   <div class="language">
     <div class="web">
       <h1>{{tech.subHead}}</h1>
       <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
-      <!-- <div class="backend">
-        <div class="ror" *ngFor="let backend of backends">
-          <img [src]="backend.image" alt="ror">
-          <h3>{{backend.title}}</h3>
-        </div>
-      </div> -->
       <app-technoback></app-technoback>
       <h2>{{tech.title2}}</h2>
-      <!-- <div class="frontend">
-        <div class="react" *ngFor="let frontend of frontends">
-          <img [src]="frontend.image">
-          <h3>{{frontend.title}}</h3>
-        </div>
-      </div> -->
       <app-technofront></app-technofront>
     </div>
   </div>
@@ -121,19 +53,7 @@
 <span class="headerline"></span>
 <p class="taglinewhyp">{{chooseDes}}</p>
 <div class="empowers">
-  <!-- <div class="empowerbox" *ngFor="let choose of chooses">
-    <div class="imgnumflex">
-      <img [src]="choose.image">
-      <h1>{{choose.title1}}</h1>
-    </div>
-    <h2>{{choose.title2}}</h2>
-    <p>{{choose.des}}</p>
-  </div> -->
   <app-taglineexpcard></app-taglineexpcard>
-  <!-- <div class="empowerbox lastempowerbox">
-    <h1><span>{{endblog.title1}} </span> {{endblog.title2}}<span> {{endblog.title3}}</span> {{endblog.title4}}</h1>
-    <button>{{endblog.btn}}</button>
-  </div> -->
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -146,24 +66,6 @@
     <p>{{reviewhead.des2}}</p>
   </div>
   <div class="reviewsboxes">
-    <!-- <div class="revbox" *ngFor="let review of reviews">
-      <div class="rating">
-        <h3>{{review.head}}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-      <p>{{review.des}}</p>
-      <small>{{review.name}}</small>
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>&nbsp;
-        <p>{{review.verify}}</p>
-      </div>
-    </div> -->
     <app-taglineclientrating></app-taglineclientrating>
   </div>
 </div>
@@ -175,9 +77,6 @@
   <div class="awardhead">
     <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
   </div>
-  <!-- <div class="awardimage" *ngFor="let award of awards">
-    <img [src]="award" height="160" width="160">
-  </div> -->
   <app-award [awardDatas]="awards"></app-award>
 </div>
 
@@ -187,16 +86,6 @@
   <h1>Our Blogs</h1>
   <span class="headerline"></span>
   <div class="bloggers">
-    <!-- <div class="blog" *ngFor="let blog of blogs">
-      <img [src]="blog.image">
-      <div style="display: flex;justify-content: space-between;">
-        <button>{{blog.button}}</button>
-        <p>{{blog.date}}</p>
-      </div>
-      <h3>{{blog.head1}}</h3>
-      <p>{{blog.des}}</p>
-      <a href="#">{{blog.endbtn}}</a>
-    </div> -->
     <app-blogs></app-blogs>
   </div>
 </div>
