@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Iservices } from '../common';
+import { DataService } from '../Services/data.service';
 @Component({
   selector: 'app-ourservices',
   templateUrl: './ourservices.component.html',
@@ -7,11 +8,16 @@ import { Iservices } from '../common';
 })
 export class OurservicesComponent implements OnInit {
 
-  @Input() servDataes!: Iservices[];
+  public ourserve!: Iservices[];
 
-  constructor() { }
+  // @Input() servDataes!: Iservices[];
+
+  constructor(private dataService: DataService) {
+  }
 
   ngOnInit(): void {
+    this.ourserve = this.dataService.getData();
+    // console.log(this.ourserve)
   }
 
 }

@@ -2,14 +2,18 @@
 <div class="services">
     <div class="boxes">
         <app-firstourservice></app-firstourservice>
-        <div class="divcontent divcontent2" *ngFor="let service of servDataes">
+        <div class="divcontent divcontent2" *ngFor="let service of ourserve">
+            <ng-container [ngTemplateOutlet]="serviceTemplate" [ngTemplateOutletContext]="{servData:service}">
+            </ng-container>
+        </div>
+        <app-lastourservice></app-lastourservice>
+        <ng-template #serviceTemplate let-service="servData">
             <div class="flex">
                 <img [src]="service.images" alt="logo">
                 <h2>{{service.title}}</h2>
             </div>
             <p>{{service.description}}</p>
             <a href="#">{{service.button}}</a>
-        </div>
-        <app-lastourservice></app-lastourservice>
+        </ng-template>
     </div>
 </div>
