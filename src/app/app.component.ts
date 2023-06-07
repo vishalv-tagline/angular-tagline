@@ -67,6 +67,8 @@ export class AppComponent {
     '../assets/images/award-6.webp'
   ]
 
+  ourBlogsHead: string = "Our Blogs";
+
   footerhead: Footermain = {
     headMian: 'Get latest from Tagline Infotech',
     head1: 'Share your email so we can send you',

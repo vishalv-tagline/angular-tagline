@@ -11,13 +11,15 @@ export class FhiredevlComponent implements OnInit {
   @Input() hireHead: string = '';
   @Input() hiredevDatas: string[] = [];
 
-  hireHead2: string = '';
-  hireDatas!: string[];
-  constructor(private inqueryService: InqueryService) { }
+  public hireHead2: string = '';
+  public hireDatas!: string[];
 
-  ngOnInit(): void {
+  constructor(private inqueryService: InqueryService) {
     this.hireHead2 = this.inqueryService.getHireHead();
     this.hireDatas = this.inqueryService.getHireDatas();
+  }
+
+  ngOnInit(): void {
   }
 
 }

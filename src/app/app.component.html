@@ -1,27 +1,32 @@
 <div class="topbar">
   <app-navbar [navbarItems]="navbar"></app-navbar>
   <div class="headtext">
-    <h1>{{heading.head1}}<br>{{heading.head2}}</h1>
-    <h1>{{heading.title1}}<span> {{heading.title2}}</span></h1>
-    <p>{{heading.des1}}<br>{{heading.des2}}</p>
-    <button>{{heading.button}}</button>
-    <img [src]="heading.image">
+    <h1>{{ heading.head1 }}<br />{{ heading.head2 }}</h1>
+    <h1>
+      {{ heading.title1 }}<span> {{ heading.title2 }}</span>
+    </h1>
+    <p>{{ heading.des1 }}<br />{{ heading.des2 }}</p>
+    <button>{{ heading.button }}</button>
+    <img [src]="heading.image" />
   </div>
 </div>
 
 <!-- ___________________________________________________________ -->
 
 <div class="services">
-  <h1>{{servtitle1}}</h1>
+  <h1>{{ servtitle1 }}</h1>
   <span class="headerline"></span>
   <div class="boxes">
     <app-ourservices></app-ourservices>
   </div>
   <!-- ___________________________________________________________ -->
   <div class="experience">
-    <app-exprienceleft [exprienceTitle]="chooseHead" [exprienceDes]="chooseDes"></app-exprienceleft>
+    <app-exprienceleft
+      [exprienceTitle]="chooseHead"
+      [exprienceDes]="chooseDes"
+    ></app-exprienceleft>
     <span>
-      <img [src]="womenImg" height="550">
+      <img [src]="womenImg" height="550" />
     </span>
     <app-exprienceright></app-exprienceright>
   </div>
@@ -29,7 +34,9 @@
 
 <!-- ____________________________________________________________________ -->
 
-<h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{tech.head}}</h1>
+<h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
+  {{ tech.head }}
+</h1>
 <span class="headerline"></span>
 <div class="row">
   <div class="menu">
@@ -37,10 +44,10 @@
   </div>
   <div class="language">
     <div class="web">
-      <h1>{{tech.subHead}}</h1>
-      <h2 style="margin-top: 20px;font-weight: 400;">{{tech.title1}}</h2>
+      <h1>{{ tech.subHead }}</h1>
+      <h2 style="margin-top: 20px; font-weight: 400">{{ tech.title1 }}</h2>
       <app-technoback></app-technoback>
-      <h2>{{tech.title2}}</h2>
+      <h2>{{ tech.title2 }}</h2>
       <app-technofront></app-technofront>
     </div>
   </div>
@@ -48,9 +55,9 @@
 
 <!-- ____________________________________________________________________ -->
 
-<h1 class="taglinewhyhead">{{chooseHead}}</h1>
+<h1 class="taglinewhyhead">{{ chooseHead }}</h1>
 <span class="headerline"></span>
-<p class="taglinewhyp">{{chooseDes}}</p>
+<p class="taglinewhyp">{{ chooseDes }}</p>
 <div class="empowers">
   <app-taglineexpcard></app-taglineexpcard>
 </div>
@@ -59,10 +66,10 @@
 
 <div class="reviews">
   <div class="reviewword">
-    <h1>{{reviewhead.mainHead}}</h1>
+    <h1>{{ reviewhead.mainHead }}</h1>
     <span class="headerline"></span>
-    <p>{{reviewhead.des1}}</p>
-    <p>{{reviewhead.des2}}</p>
+    <p>{{ reviewhead.des1 }}</p>
+    <p>{{ reviewhead.des2 }}</p>
   </div>
   <div class="reviewsboxes">
     <app-taglineclientrating></app-taglineclientrating>
@@ -71,10 +78,12 @@
 
 <!-- ____________________________________________________________________ -->
 
-
 <div class="awards">
   <div class="awardhead">
-    <h1>{{awardtitle1}}<br> {{awardtitle2}}</h1>
+    <h1>
+      {{ awardtitle1 }}<br />
+      {{ awardtitle2 }}
+    </h1>
   </div>
   <app-award [awardDatas]="awards"></app-award>
 </div>
@@ -82,7 +91,7 @@
 <!-- ____________________________________________________________________ -->
 
 <div class="blogs">
-  <h1>Our Blogs</h1>
+  <h1>{{ ourBlogsHead }}</h1>
   <span class="headerline"></span>
   <div class="bloggers">
     <app-blogs></app-blogs>
@@ -94,19 +103,21 @@
 <div class="contactus">
   <div class="formdetail">
     <div class="address">
-      <h4>{{address}}</h4>
+      <h4>{{ address }}</h4>
       <app-address></app-address>
       <div class="place">
-        <a href="mailto:solutions@taglineinfotech.com" class="mail"><i class="bi bi-envelope-fill"></i> {{add3}}</a>
+        <a href="mailto:solutions@taglineinfotech.com" class="mail"
+          ><i class="bi bi-envelope-fill"></i> {{ add3 }}</a
+        >
       </div>
     </div>
   </div>
   <div class="forms">
-    <h1>{{formHead}}</h1>
-    <input type="text" placeholder="Full Name"><br>
-    <input type="text" placeholder="Phone"><br>
-    <input type="email" placeholder="Email"><br>
-    <textarea placeholder="Message" rows="3"></textarea><br>
+    <h1>{{ formHead }}</h1>
+    <input type="text" placeholder="Full Name" /><br />
+    <input type="text" placeholder="Phone" /><br />
+    <input type="email" placeholder="Email" /><br />
+    <textarea placeholder="Message" rows="3"></textarea><br />
     <button>Send Message</button>
   </div>
 </div>
@@ -116,13 +127,19 @@
 <div class="footer">
   <div class="firstfooter">
     <div class="cont1">
-      <h3>{{footerhead.headMian}}</h3>
-      <p>{{footerhead.head1}} <span style="color:#d66f37">{{footerhead.head2}}</span> {{footerhead.head3}}<span
-          style="color:#d66f37"> {{footerhead.head4}}</span></p>
+      <h3>{{ footerhead.headMian }}</h3>
+      <p>
+        {{ footerhead.head1 }}
+        <span style="color: #d66f37">{{ footerhead.head2 }}</span>
+        {{ footerhead.head3
+        }}<span style="color: #d66f37"> {{ footerhead.head4 }}</span>
+      </p>
     </div>
     <div class="cont2">
-      <input type="text" placeholder="Email"><span><button>{{footerhead.head5}}</button></span>
-      <p>{{footerhead.head6}}</p>
+      <input type="text" placeholder="Email" /><span
+        ><button>{{ footerhead.head5 }}</button></span
+      >
+      <p>{{ footerhead.head6 }}</p>
     </div>
   </div>
   <div class="division">
@@ -138,18 +155,27 @@
     <div class="hire">
       <app-fhiredevl></app-fhiredevl>
     </div>
-  </div><br>
-  <hr>
+  </div>
+  <br />
+  <hr />
   <div class="lastfooterdiv">
-    <img src="../assets/images/tagline-stamp.png">
-    <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">Follow Us <i class="bi bi-facebook"></i>
+    <img src="../assets/images/tagline-stamp.png" />
+    <div>
+      <a href="" style="text-decoration: none; color: gray; font-size: 17px"
+        >Follow Us <i class="bi bi-facebook"></i>
         <i class="bi bi-linkedin"></i>
         <i class="bi bi-twitter"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-globe"></i>
-      </a></div>
-    <p>©<span style="color:#d66f37"> {{footerhead.head7}}</span> {{footerhead.head8}}<a href=""
-        style="text-decoration: none;color:#d66f37">{{footerhead.head9}}</a></p>
+      </a>
+    </div>
+    <p>
+      ©<span style="color: #d66f37"> {{ footerhead.head7 }}</span>
+      {{ footerhead.head8
+      }}<a href="" style="text-decoration: none; color: #d66f37">{{
+        footerhead.head9
+      }}</a>
+    </p>
   </div>
 </div>
 

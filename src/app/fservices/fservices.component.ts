@@ -8,16 +8,18 @@ import { InqueryService } from '../Services/inquery.service';
 })
 export class FservicesComponent implements OnInit {
 
-  @Input() serviceHead: string = '';
-  @Input() serviceDatas: string[] = [];
+  // @Input() serviceHead: string = '';
+  // @Input() serviceDatas: string[] = [];
 
-  serveHead: string = '';
-  serveDatas!: string[];
-  constructor(private inqueryService: InqueryService) { }
+  public serveHead: string = '';
+  public serveDatas!: string[];
 
-  ngOnInit(): void {
+  constructor(private inqueryService: InqueryService) {
     this.serveHead = this.inqueryService.getServeHead();
     this.serveDatas = this.inqueryService.getServeData();
+  }
+
+  ngOnInit(): void {
   }
 
 }

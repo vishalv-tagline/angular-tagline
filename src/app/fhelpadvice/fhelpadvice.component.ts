@@ -11,13 +11,14 @@ export class FhelpadviceComponent implements OnInit {
   // @Input() helpHead: string = '';
   // @Input() helpDatas: string[] = [];
 
-  helpHeadData: string = '';
-  helpDatas!: string[];
-  constructor(private inqueryService: InqueryService) { }
-
-  ngOnInit(): void {
+  public helpHeadData: string = '';
+  public helpDatas!: string[];
+  constructor(private inqueryService: InqueryService) {
     this.helpHeadData = this.inqueryService.getHelpHead();
     this.helpDatas = this.inqueryService.getHelpsData();
+  }
+
+  ngOnInit(): void {
   }
 
 }
